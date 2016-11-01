@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="logo">
+        <img src="logo.png" alt="City of Sedona" width="67" height="56">
+      </div>
 
       <nav class="main-nav container">
-        <div class="logo">
-          <img src="logo.png" alt="City of Sedona" width="67px" height="56px">
-        </div>
         <a href="#">Информация</a>
         <a href="#">Фото и видео</a>
         <a href="#">Карта штата</a>
@@ -20,47 +20,53 @@
 
     <main>
       <div class="container">
-        <img src="sedona.png" alt="Welcome to Sedona" width="768px" height="512px">
+        <img src="sedona.png" alt="Welcome to Sedona" width="768" height="512">
 
         <section class="reasons">
           <h1>СЕДОНА — небольшой городок в Аризоне, заслужвающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон! </p>
 
           <div class="reason1">
-            <header>Настоящий городок<header>
-            <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="picture-reason1" src="reason1.jpg" alt="Place to stay" width="800px" height="256">
+            <h2>Настоящий городок</h2>
+            <p><span class="number">№1<span> Седона — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <img class="picture-reason1" src="reason1.jpg" alt="Place to stay" width="800" height="256">
           </div>
 
           <div class="features">
             <ul>
-              <li class="motel">Жилье</li>
+              <li class="motel">Жилье
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              <li class="food">Еда</li>
+              </li>
+              <li class="food">Еда
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              <li class="souvenirs">Сувениры</li>
+              </li>
+              <li class="souvenirs">Сувениры
               <p>Не только китайского, но и местного производства!</p>
+              </li>
             </ul>
           </div>
 
-          <div class="reason2"
-            <img class="picture-reason2" src="reason2.jpg" alt="Devil's Bridge" width="800px" height="256">
-            <header>Там есть мост дьявола<header>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="reason2">
+            <img class="picture-reason2" src="reason2.jpg" alt="Devil's Bridge" width="800" height="256">
+            <h2>Там есть мост дьявола</h2>
+            <p><span class="number">№2<span> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
 
-          <div class="reason3-4-5">
-            <ul>
-              <li class="reason3">Небольшая площадь</li>
-              <p>ВСЕ достопримечательности находятся очень близко</p>
-
-              <li class="reason4">Красивая дорога</li>
-              <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-
-              <li class="reason5">Мало туристов</li>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </ul>
+          <div class="reason3">
+            <h2>Небольшая площадь</h2>
+            <p><span class="number">№3<span> Все достопримечательности находятся очень близко</p>
           </div>
+
+          <div class="reason4">
+            <h2>Красивая дорога</h2>
+            <p><span class="number">№4<span> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </div>
+
+          <div class="reason5">
+            <h2>Мало туристов</h2>
+            <p><span class="number">№5<span> Большинство едет в гранд каньон и толпится там</p>
+          </div>
+
         </section>
 
         <h2>Заинтерисовались?</h2>
@@ -76,16 +82,16 @@
             <input type="text" id="departure-date" class="date" placeholder="4 июля 2016">
 
             <label for="adults">Взрослые</label>
-              <span class="plus">+</span>
+            <span class="plus">+</span>
             <input type="text" id="adults" value="2">
-              <span class="minus">-</span>
+            <span class="minus">-</span>
 
             <label for="child">Дети</label>
-              <span class="plus">+</span>
+            <span class="plus">+</span>
             <input type="text" id="child" value="2">
-              <span class="minus">-</span>
+            <span class="minus">-</span>
 
-            <button type="submit" class="find" value="Найти">
+            <button type="submit" class="find">Найти</button>
           </fieldset>
         </form>
 
@@ -98,13 +104,13 @@
       </div>
 
       <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#"><p>Twitter</p></a>
-        <a class="social-btn social-btn-fb" href="#"><p>Facebook</p></a>
-        <a class="social-btn social-btn-ut" href="#"><p>YouTube</p></a>
+        <a class="social-btn social-btn-tw" href="#"><span>Twitter</span></a>
+        <a class="social-btn social-btn-fb" href="#"><span>Facebook</span></a>
+        <a class="social-btn social-btn-ut" href="#"><span>YouTube</span></a>
       </section>
 
       <address class="footer-copyright">
-        <p>WEBSITE BY</p>
+        <span>WEBSITE BY</span>
         <img src="html-logo.img" class="html-logo" alt="HTML Academy">
       </address>
     </footer>
