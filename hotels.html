@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="City of Sedona" width="67" height="56"></a>
+      </div>
+
+      <nav class="main-nav container">
+        <a href="#">Информация</a>
+        <a href="#">Фото и видео</a>
+        <a href="#">Карта штата</a>
+        Гостиницы
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section="find">
+          <form class="infrastructure">
+            <p>Инфраструктура:</p>
+            <label>
+              <input type="radio" checked>
+              БАССЕЙН
+            </label>
+            <label>
+              <input type="radio">
+              ПАРКОВКА
+            </label>
+            <label>
+              <input type="radio">
+              Wi-Fi
+            </label>
+          </form>
+
+          <form class="house">
+            <p>Тип жилья:</p>
+            <label>
+              <input type="radio" checked>
+              Гостиница
+            </label>
+            <label>
+              <input type="radio" checked>
+              МОТЕЛЬ
+            </label>
+            <label>
+              <input type="radio" checked>
+              АПАРТАМЕНТЫ
+            </label>
+          </form>
+
+          <form class="price">
+            <label for="price">Стоимость в сутки(р):</label>
+            <table>
+              <tr>
+               <td>от 0</td>
+               <td>до 3000</td>
+             </tr>
+            </table>
+            <input type="range" id="price" name="price" min="0" max="3000">
+          </form>
+        </section>
+
+        <section="result">
+          <h2>Найдено:3</h2>
+          <p>Сортировка:</p>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+
+          <div class="hotel-1">
+            <img src="hotel1.jpg" alt="Amara Resort & Spa">
+            <h2>Amara Resort & Spa</h2>
+            <table>
+              <tr>
+                <td>Гостиница</td>
+                <td>от 3500 р.</td>
+              </tr>
+              <tr>
+                <td><button class="more" type="submit">Подробнее</button></td>
+                <td><button class="reserve" type="submit">Забронировать</button></td>
+              </tr>
+            </table>
+            <span class="rating">Рейтинг 8,5</span>
+          </div>
+
+          <div class="hotel-2">
+            <img src="hotel2.jpg" alt="Desert Quail Inn">
+            <h2>Desert Quail Inn</h2>
+            <table>
+              <tr>
+                <td>Мотель</td>
+                <td>от 2500 р.</td>
+              </tr>
+              <tr>
+                <td><button class="more" type="submit">Подробнее</button></td>
+                <td><button class="reserve" type="submit">Забронировать</button></td>
+              </tr>
+            </table>
+            <span class="rating">Рейтинг 8,9</span>
+          </div>
+
+          <div class="hotel-3">
+            <img src="hotel3.jpg" alt="Villas at Poco Diablo">
+            <h2>Villas at Poco Diablo</h2>
+            <table>
+              <tr>
+                <td>Аппартаменты</td>
+                <td>от 4000 р.</td>
+              </tr>
+              <tr>
+                <td><button class="more" type="submit">Подробнее</button></td>
+                <td><button class="reserve" type="submit">Забронировать</button></td>
+              </tr>
+            </table>
+            <span class="rating">Рейтинг 9,2</span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="visit-sedona">
+        &#035VISITSEDONA
+      </div>
+
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#"><span>Twitter</span></a>
+        <a class="social-btn social-btn-fb" href="#"><span>Facebook</span></a>
+        <a class="social-btn social-btn-ut" href="#"><span>YouTube</span></a>
+      </section>
+
+      <address class="footer-copyright">
+        <span>WEBSITE BY</span>
+        <img src="html-logo.img" class="html-logo" alt="HTML Academy">
+      </address>
+    </footer>
+
+  </body>
+</html>
