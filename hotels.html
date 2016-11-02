@@ -7,122 +7,106 @@
   <body>
     <header class="main-header">
       <div class="logo">
-        <a href="#"><img src="logo.png" alt="City of Sedona" width="67" height="56"></a>
+        <img src="logo.png" alt="City of Sedona" width="67" height="56">
       </div>
 
       <nav class="main-nav container">
         <a href="#">Информация</a>
         <a href="#">Фото и видео</a>
         <a href="#">Карта штата</a>
-        Гостиницы
+        <a href="hotels.html">Гостиницы</a>
       </nav>
     </header>
 
     <main>
       <div class="container">
+        <img src="sedona.png" alt="Welcome to Sedona" width="768" height="512">
 
-        <section class="find">
-          <form class="infrastructure">
-            <p>Инфраструктура:</p>
-            <label>
-              <input type="radio" checked>
-              БАССЕЙН
-            </label>
-            <label>
-              <input type="radio">
-              ПАРКОВКА
-            </label>
-            <label>
-              <input type="radio">
-              Wi-Fi
-            </label>
-          </form>
+        <section class="reasons">
+          <h1>СЕДОНА — небольшой городок в Аризоне, заслужвающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
 
-          <form class="house">
-            <p>Тип жилья:</p>
-            <label>
-              <input type="radio" checked>
-              Гостиница
-            </label>
-            <label>
-              <input type="radio" checked>
-              МОТЕЛЬ
-            </label>
-            <label>
-              <input type="radio" checked>
-              АПАРТАМЕНТЫ
-            </label>
-          </form>
+          <div class="reason1">
+            <h2>Настоящий городок</h2>
+            <span class="number">№1</span>
+            <p>Седона — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <img class="picture-reason1" src="reason1.jpg" alt="Place to stay" width="800" height="256">
+          </div>
 
-          <form class="price">
-            <label for="price">Стоимость в сутки(р):</label>
-            <table>
-              <tr>
-               <td>от 0</td>
-               <td>до 3000</td>
-             </tr>
-            </table>
-            <input type="range" id="price" name="price" min="0" max="3000">
-          </form>
+          <div class="features">
+            <ul>
+              <li class="motel">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="food">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="souvenirs">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+            <ul class="cursor">
+              <li class="more"></li>
+              <li class="less"></li>
+            </ul>
+          </div>
+
+          <div class="reason2">
+            <img class="picture-reason2" src="reason2.jpg" alt="Devil's Bridge" width="800" height="256">
+            <h2>Там есть мост дьявола</h2>
+            <span class="number">№2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+
+          <div class="reason3">
+            <h2>Небольшая площадь</h2>
+            <span class="number">№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+
+          <div class="reason4">
+            <h2>Красивая дорога</h2>
+            <span class="number">№4</span>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </div>
+
+          <div class="reason5">
+            <h2>Мало туристов</h2>
+            <span class="number">№5</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
+
         </section>
 
-        <section class="result">
-          <h2>Найдено:3</h2>
-          <p>Сортировка:</p>
-          <ul>
-            <li><a href="#">По цене</a></li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
+        <h2>Заинтерисовались?</h2>
+        <p class="interested">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-          <div class="hotel-1">
-            <img src="hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
-            <h2>Amara Resort & Spa</h2>
-            <table>
-              <tr>
-                <td>Гостиница</td>
-                <td>от 3500 р.</td>
-              </tr>
-              <tr>
-                <td><button class="more" type="submit">Подробнее</button></td>
-                <td><button class="reserve" type="submit">Забронировать</button></td>
-              </tr>
-            </table>
-            <span class="rating">Рейтинг 8,5</span>
-          </div>
+        <form>
+          <fieldset>
+            <legend>Поиск гостиницы в седоне</legend>
+            <label for="arrival-date">Дата заезда</label>
+            <input type="text" id="arrival-date" class="date" placeholder="24 апреля 2016">
 
-          <div class="hotel-2">
-            <img src="hotel2.jpg" alt="Desert Quail Inn" width="135" height="90">
-            <h2>Desert Quail Inn</h2>
-            <table>
-              <tr>
-                <td>Мотель</td>
-                <td>от 2500 р.</td>
-              </tr>
-              <tr>
-                <td><button class="more" type="submit">Подробнее</button></td>
-                <td><button class="reserve" type="submit">Забронировать</button></td>
-              </tr>
-            </table>
-            <span class="rating">Рейтинг 8,9</span>
-          </div>
+            <label for="departure-date">Дата выезда</label>
+            <input type="text" id="departure-date" class="date" placeholder="4 июля 2016">
 
-          <div class="hotel-3">
-            <img src="hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-            <h2>Villas at Poco Diablo</h2>
-            <table>
-              <tr>
-                <td>Аппартаменты</td>
-                <td>от 4000 р.</td>
-              </tr>
-              <tr>
-                <td><button class="more" type="submit">Подробнее</button></td>
-                <td><button class="reserve" type="submit">Забронировать</button></td>
-              </tr>
-            </table>
-            <span class="rating">Рейтинг 9,2</span>
-          </div>
-        </section>
+            <label for="adults">Взрослые</label>
+            <span class="plus">+</span>
+            <input type="text" id="adults" value="2">
+            <span class="minus">-</span>
+
+            <label for="child">Дети</label>
+            <span class="plus">+</span>
+            <input type="text" id="child" value="2">
+            <span class="minus">-</span>
+
+            <button type="submit" class="find">Найти</button>
+          </fieldset>
+        </form>
+
       </div>
     </main>
 
