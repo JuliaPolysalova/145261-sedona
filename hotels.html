@@ -22,23 +22,17 @@
       <div class="container">
 
         <section class="find">
-          <form class="infrastructure">
+          <form>
             <p>Инфраструктура:</p>
-            <label>
-              <input type="radio" checked>
-              БАССЕЙН
-            </label>
-            <label>
-              <input type="radio">
-              ПАРКОВКА
-            </label>
-            <label>
-              <input type="radio">
-              Wi-Fi
-            </label>
-          </form>
-
-          <form class="house">
+            <input type="radio" id="pool" checked>
+              
+            <label for="parking">ПАРКОВКА</label>
+              <input type="radio" id="parking">
+              
+            <label for="mi-fi">Wi-Fi</label>
+              <input type="radio" id="wi-fi">
+              
+            
             <p>Тип жилья:</p>
             <label>
               <input type="radio" checked>
@@ -52,9 +46,7 @@
               <input type="radio" checked>
               АПАРТАМЕНТЫ
             </label>
-          </form>
 
-          <form class="price">
             <label for="price">Стоимость в сутки(р):</label>
             <table>
               <tr>
