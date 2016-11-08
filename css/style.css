@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
      font-size: 14px;
      font-weight: normal;
      font-family: "PT Sans", "Arial", serif;
@@ -18,11 +17,5 @@ h1 {
 h2 {
   font-size: 21px;
   font-weight: bold;
-=======
-     font-size: 16px;
-     font-weight: normal;
-     font-family: "PT Sans", "Arial", serif;
-     color: #000000;
-     line-height: normal;
->>>>>>> origin/master
 }
+
