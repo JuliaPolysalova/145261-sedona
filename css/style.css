@@ -3,7 +3,7 @@ body {
      font-weight: normal;
      font-family: "PT Sans", "Arial", serif;
      color: #000000;
-     line-height: 21;
+     line-height: 21px;
      text-transform: uppercase;
 }
 
@@ -11,7 +11,7 @@ h1 {
   font-size: 21px;
   font-weight: bold;
   font-family: PT Sans, Myriad Pro;
-  line-height: 26;
+  line-height: 26px;
 }
 
 h2 {
