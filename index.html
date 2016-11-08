@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="logo">
-        <img src="logo.png" alt="City of Sedona" width="67" height="56">
+        <img src="/img/logo.png" alt="City of Sedona" width="67" height="56">
       </div>
 
       <nav class="main-nav container">
         <a href="#">Информация</a>
         <a href="#">Фото и видео</a>
         <a href="#">Карта штата</a>
-        <a href="#">Гостиницы</a>
+        <a href="hotels.html">Гостиницы</a>
       </nav>
     </header>
 
     <main>
       <div class="container">
-        <img src="sedona.png" alt="Welcome to Sedona" width="768" height="512">
+        <img src="img/background.jpg" alt="Welcome to Sedona" width="768" height="512">
 
         <section class="reasons">
           <h1>СЕДОНА — небольшой городок в Аризоне, заслужвающий большего!</h1>
@@ -30,7 +31,7 @@
             <h2>Настоящий городок</h2>
             <span class="number">№1</span>
             <p>Седона — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="picture-reason1" src="reason1.jpg" alt="Place to stay" width="800" height="256">
+            <img class="picture-reason1" src="img/reason1.jpg" alt="Place to stay" width="800" height="256">
           </div>
 
           <div class="features">
@@ -51,7 +52,7 @@
           </div>
 
           <div class="reason2">
-            <img class="picture-reason2" src="reason2.jpg" alt="Devil's Bridge" width="800" height="256">
+            <img class="picture-reason2" src="img/reason2.jpg" alt="Devil's Bridge" width="800" height="256">
             <h2>Там есть мост дьявола</h2>
             <span class="number">№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -85,9 +86,11 @@
             <legend>Поиск гостиницы в седоне</legend>
             <label for="arrival-date">Дата заезда</label>
             <input type="text" id="arrival-date" class="date" placeholder="24 апреля 2016">
+            <span class="calendar"></span>
 
             <label for="departure-date">Дата выезда</label>
             <input type="text" id="departure-date" class="date" placeholder="4 июля 2016">
+            <span class="calendar"></span>
 
             <label for="adults">Взрослые</label>
             <span class="plus">+</span>
@@ -108,7 +111,7 @@
 
     <footer>
       <div class="visit-sedona">
-        &#035VISITSEDONA
+        &#035;VISITSEDONA
       </div>
 
       <section class="footer-social">
