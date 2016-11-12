@@ -7,16 +7,18 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
-      </div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
+        </div>
 
-      <nav class="main-nav container">
-        <a href="#">Информация</a>
-        <a href="#">Фото и видео</a>
-        <a href="#">Карта штата</a>
-        Гостиницы
-      </nav>
+        <nav class="main-nav container">
+          <a href="#">Информация</a>
+          <a href="#">Фото и видео</a>
+          <a href="#">Карта штата</a>
+          Гостиницы
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -24,7 +26,7 @@
 
         <section class="find">
           <form class="choose">
-            <h2>Инфраструктура:</h2>
+            <h2 class="h2_choose">Инфраструктура:</h2>
               <input type="radio" checked>
               <label>БАССЕЙН</label>
 
@@ -34,7 +36,7 @@
               <input type="radio">
               <label>Wi-Fi</label>
 
-            <h2>Тип жилья:</h2>
+            <h2 class="h2_choose">Тип жилья:</h2>
               <input type="radio" id="hotel" checked>
               <label for="hotel">Гостиница</label>
 
@@ -47,7 +49,7 @@
               <input type="radio" id="flat" checked>
               <label for="flat">АПАРТАМЕНТЫ</label>
 
-            <h2>Стоимость в сутки(р):</h2>
+            <h2 class="h2_choose">Стоимость в сутки(р):</h2>
             <table>
               <tr>
                <td>от 0</td>
@@ -59,7 +61,7 @@
         </section>
 
         <section class="result">
-          <h2>Найдено:3</h2>
+          <h2 class="hotels_found">Найдено:3</h2>
           <span>Сортировка:</span>
           <ul>
             <li><a href="#">По цене</a></li>
@@ -74,9 +76,8 @@
           <div class="hotel-1">
 
             <img src="img/hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
-            <img src="hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
 
-            <h2>Amara Resort & Spa</h2>
+            <h2 class="h2_found">Amara Resort & Spa</h2>
             <span>Гостиница</span>
             <span>от 3500 р.</span>
             <a href="#">Подробнее</a>
@@ -88,9 +89,8 @@
           <div class="hotel-2">
 
             <img src="img/hotel2.jpg" alt="Desert Quail Inn" width="135" height="90">
-            <img src="hotel2.jpg" alt="Desert Quail Inn" width="135" height="90">
 
-            <h2>Desert Quail Inn</h2>
+            <h2 class="h2_found">Desert Quail Inn</h2>
             <span>Мотель</span>
             <span>от 2500 р.</span>
             <a href="#">Подробнее</a>
@@ -102,9 +102,8 @@
           <div class="hotel-3">
 
             <img src="img/hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-            <img src="hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
 
-            <h2>Villas at Poco Diablo</h2>
+            <h2 class="h2_found">Villas at Poco Diablo</h2>
             <span>Апартаменты</span>
             <span>от 4000 р.</span>
             <a class="button_blue" href="#">Подробнее</a>
@@ -136,4 +135,3 @@
 
   </body>
 </html>
-
