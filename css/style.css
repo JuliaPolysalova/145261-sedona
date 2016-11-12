@@ -1,7 +1,7 @@
 body {
      font-size: 14px;
      font-weight: normal;
-     font-family: "PT Sans", "Arial", serif;
+     font-family: "PT Sans", "Arial";
      color: #000000;
      line-height: 21px;
      text-transform: uppercase;
@@ -10,12 +10,41 @@ body {
 h1 {
   font-size: 21px;
   font-weight: bold;
-  font-family: PT Sans, Myriad Pro;
+  font-family: "PT Sans Bold", "Myriad Pro";
   line-height: 26px;
 }
 
-h2 {
-  font-size: 21px;
+.h2_choose {
+  font-size: 16px;
   font-weight: bold;
+  font-family: "PT Sans Bold", "Myriad Pro";
+  line-height: 21px;
 }
 
+.h2_found {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Myriad Pro";
+  line-height: 26px;
+}
+
+.h2_reasons {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Myriad Pro";
+  line-height: 21px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Myriad Pro";
+  line-height: 21px;
+}
+
+.h2_intrested {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Myriad Pro";
+  line-height: 24px;  
+}
