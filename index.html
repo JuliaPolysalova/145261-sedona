@@ -3,35 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/145261/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="logo">
-        <img src="/img/logo.png" alt="City of Sedona" width="67" height="56">
+        <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
       </div>
 
       <nav class="main-nav container">
         <a href="#">Информация</a>
         <a href="#">Фото и видео</a>
         <a href="#">Карта штата</a>
-        <a href="#">Гостиницы</a>
+        <a href="hotels.html">Гостиницы</a>
       </nav>
     </header>
 
     <main>
       <div class="container">
-        <img src="sedona.png" alt="Welcome to Sedona" width="768" height="512">
+        <div class="background">
+             <img src="img/welcome.png" alt="Welcome to Sedona" width="768" height="512">
+        </div>
 
         <section class="reasons">
           <h1>СЕДОНА — небольшой городок в Аризоне, заслужвающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
 
           <div class="reason1">
-            <h2>Настоящий городок</h2>
+            <h2 class="h2_reasons">Настоящий городок</h2>
             <span class="number">№1</span>
             <p>Седона — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="picture-reason1" src="reason1.jpg" alt="Place to stay" width="800" height="256">
+            <img class="picture-reason1" src="img/reason1.jpg" alt="Place to stay" width="800" height="256">
           </div>
 
           <div class="features">
@@ -52,33 +54,33 @@
           </div>
 
           <div class="reason2">
-            <img class="picture-reason2" src="reason2.jpg" alt="Devil's Bridge" width="800" height="256">
-            <h2>Там есть мост дьявола</h2>
+            <img class="picture-reason2" src="img/reason2.jpg" alt="Devil's Bridge" width="800" height="256">
+            <h2 class="h2_reasons">Там есть мост дьявола</h2>
             <span class="number">№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
 
           <div class="reason3">
-            <h2>Небольшая площадь</h2>
+            <h2 class="h2_reasons">Небольшая площадь</h2>
             <span class="number">№3</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
 
           <div class="reason4">
-            <h2>Красивая дорога</h2>
+            <h2 class="h2_reasons">Красивая дорога</h2>
             <span class="number">№4</span>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </div>
 
           <div class="reason5">
-            <h2>Мало туристов</h2>
+            <h2 class="h2_reasons">Мало туристов</h2>
             <span class="number">№5</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
 
         </section>
 
-        <h2>Заинтерисовались?</h2>
+        <h2 class="h2_intrested">Заинтерисовались?</h2>
         <p class="interested">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
         <form>
@@ -93,21 +95,21 @@
             <span class="calendar"></span>
 
             <label for="adults">Взрослые</label>
-            <span class="plus">+</span>
+            <span class="plus"></span>
             <input type="text" id="adults" value="2">
-            <span class="minus">-</span>
+            <span class="minus"></span>
 
             <label for="child">Дети</label>
-            <span class="plus">+</span>
+            <span class="plus"></span>
             <input type="text" id="child" value="2">
-            <span class="minus">-</span>
+            <span class="minus"></span>
 
             <button type="submit" class="find">Найти</button>
           </fieldset>
         </form>
-
-      </div>
     </main>
+
+
 
     <footer>
       <div class="visit-sedona">
@@ -122,7 +124,7 @@
 
       <address class="footer-copyright">
         <span>WEBSITE BY</span>
-        <img src="html-logo.img" class="html-logo" alt="HTML Academy">
+        <img src="img/logo_html.png" class="html-logo" alt="HTML Academy" width="113" height="39">
       </address>
     </footer>
 
