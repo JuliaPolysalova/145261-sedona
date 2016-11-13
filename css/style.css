@@ -5,6 +5,10 @@ body {
   color: #000000;
   line-height: 21px;
   text-transform: uppercase;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 h1 {
@@ -46,5 +50,52 @@ h3 {
   font-size: 30px;
   font-weight: bold;
   font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 24px;  
+  line-height: 24px;
+}
+
+/*hotels ceтка*/
+.main-header {
+  min-height: 56px;
+}
+
+.container {
+  width: 1056px;
+  margin: 0 auto;
+  background: blue;
+}
+.main-nav {
+  font-size: 0px;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #000000;
+
+  display: inline-block;
+  text-align: top;
+  font-size: 14px;
+  height: 24px;
+  padding: 16px 0;
+  width: 128px;
+
+  position:relative;
+}
+
+.main-nav a:nth-child(2) {
+  margin-left: 113px;
+  margin-right: 318px;
+}
+
+.main-nav a:last-child {
+  margin-left: 113px;
+}
+
+.logo {
+  position: absolute;
+  left: 600px;
+}
+
+
+.footer {
+  height: 120px;
+  background-color: red;
 }
