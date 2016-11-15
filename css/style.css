@@ -2,9 +2,11 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: #000000;
   line-height: 21px;
   text-transform: uppercase;
+
+  color: #000000;
+  background-color: #ffffff;
 
   max-width: 1200px;
   margin: 0 auto;
@@ -53,15 +55,15 @@ h3 {
   line-height: 24px;
 }
 
-/*hotels ceтка*/
+/*header сетка*/
 .main-header {
   min-height: 56px;
 }
 
 .container {
+  background: blue;
   width: 1056px;
   margin: 0 auto;
-  background: blue;
 }
 .main-nav {
   font-size: 0px;
@@ -69,10 +71,12 @@ h3 {
 .main-nav a{
   text-decoration: none;
   color: #000000;
-
-  display: inline-block;
   text-align: top;
   font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
+  display: inline-block;
   height: 24px;
   padding: 16px 0;
   width: 128px;
@@ -87,14 +91,45 @@ h3 {
 
 .main-nav a:last-child {
   margin-left: 113px;
+  text-align: right;
 }
 
 .logo {
   position: absolute;
   left: 600px;
+  width: 138;
+  height: 70;
+}
+
+/*index ceтка*/
+
+
+
+
+/*hotels ceтка*/
+.find {
+  background: url("img/background_hotel.jpg") center;
+}
+
+.sort {
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 218px;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
 }
 
 
+
+
+
+/*footer*/
 .footer {
   height: 120px;
   background-color: red;
