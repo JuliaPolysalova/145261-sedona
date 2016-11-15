@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,11 +13,13 @@
           <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
         </div>
 
-        <nav class="main-nav container">
+        <nav class="main-nav">
+
           <a href="#">Информация</a>
           <a href="#">Фото и видео</a>
           <a href="#">Карта штата</a>
-          Гостиницы
+          <a>Гостиницы</a>
+
         </nav>
       </div>
     </header>
@@ -25,38 +28,45 @@
       <div class="container">
 
         <section class="find">
-          <form class="choose">
-            <h2 class="h2_choose">Инфраструктура:</h2>
-              <input type="radio" checked>
-              <label>БАССЕЙН</label>
+          <form class="sort">
+            <div class="choose">
+              <h2 class="h2_choose">Инфраструктура:</h2>
+              <div>
+                <input type="radio" checked>
+                <label>БАССЕЙН</label>
+              </div>
+              <div>
+                <input type="radio">
+                <label>ПАРКОВКА</label>
+              </div>
+              <div>
+                <input type="radio">
+                <label>Wi-Fi</label>
+              </div>
+            </div>
 
-              <input type="radio">
-              <label>ПАРКОВКА</label>
+            <div class="choose">
+              <h2 class="h2_choose">Тип жилья:</h2>
+                <input type="radio" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
 
-              <input type="radio">
-              <label>Wi-Fi</label>
+                <input type="radio" id="motel" checked>
+                <label for="motel">МОТЕЛЬ</label>
 
-            <h2 class="h2_choose">Тип жилья:</h2>
-              <input type="radio" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
+                <input type="radio" id="flat" checked>
+                <label for="flat">АПАРТАМЕНТЫ</label>
+            </div>
 
-              <input type="radio" id="motel" checked>
-              <label for="motel">МОТЕЛЬ</label>
-
-              <input type="radio" id="flat" checked>
-              <label for="flat">АПАРТАМЕНТЫ</label>
-
-              <input type="radio" id="flat" checked>
-              <label for="flat">АПАРТАМЕНТЫ</label>
-
-            <h2 class="h2_choose">Стоимость в сутки(р):</h2>
-            <table>
-              <tr>
-               <td>от 0</td>
-               <td>до 3000</td>
-             </tr>
-            </table>
-            <span class="range">0 3000</span>
+            <div class="choose">
+              <h2 class="h2_choose">Стоимость в сутки(р):</h2>
+              <table>
+                <tr>
+                  <td>от 0</td>
+                  <td>до 3000</td>
+                </tr>
+              </table>
+              <span class="range">0 3000</span>
+            </div>
           </form>
         </section>
 
@@ -116,21 +126,23 @@
       </div>
     </main>
 
-    <footer>
-      <div class="visit-sedona">
-        &#035;VISITSEDONA
+    <footer class="footer">
+      <div class="container">
+        <div class="visit-sedona">
+          &#035;VISITSEDONA
+        </div>
+
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#"><span>Twitter</span></a>
+          <a class="social-btn social-btn-fb" href="#"><span>Facebook</span></a>
+          <a class="social-btn social-btn-ut" href="#"><span>YouTube</span></a>
+        </section>
+
+        <address class="footer-copyright">
+          <span>WEBSITE BY</span>
+          <img src="img/logo_html.png" class="html-logo" alt="HTML Academy" width="113" height="39">
+        </address>
       </div>
-
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#"><span>Twitter</span></a>
-        <a class="social-btn social-btn-fb" href="#"><span>Facebook</span></a>
-        <a class="social-btn social-btn-ut" href="#"><span>YouTube</span></a>
-      </section>
-
-      <address class="footer-copyright">
-        <span>WEBSITE BY</span>
-        <img src="img/logo-html.png" class="html_logo" alt="HTML Academy" width="113" height="39">
-      </address>
     </footer>
 
   </body>
