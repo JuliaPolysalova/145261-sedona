@@ -108,29 +108,72 @@ h3 {
 
 /*hotels ceтка*/
 .find {
-  background: url("img/background_hotel.jpg") center;
+  background: url("../img/background_hotel.jpg") center;
 }
 
-.sort {
-  padding:0;
+.filter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
   height: 218px;
+  color: #ffffff;
 }
 
-.choose {
+.choose label{
+  display: block;
+  margin-bottom: 33px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.h2_choose {
+  margin-top: 30px;
+  margin-right: 115px;
+}
+
+.cost {
+  margin-left: 252px;
+  margin-right: 0px;
+}
+
+.result {
   display: flex;
   flex-direction: column;
 }
 
+.sort {
+  display: inline-block;
+  height: 88px;
+  background-color: white;
+  border-bottom: 2px solid grey;
+}
 
+.sort h2 {
+  margin-right: 50px;
+}
+
+.sort span {
+  margin-right: 40px;
+}
+
+.sort a {
+  margin-right: 33px;
+  text-decoration: underline dashed;
+}
+
+.hotel-1 {
+  display: inline-block;
+  background: white;
+  height: 155px;
+}
 
 
 
 /*footer*/
 .footer {
-  height: 120px;
+  height: 122px;
   background-color: red;
+  display: flex;
 }
+
