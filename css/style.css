@@ -108,8 +108,8 @@ h3 {
 /*hotels ceтка*/
 
 /*filter*/
-.find {
-  background: url("../img/background_hotel.jpg") center;
+.filter {
+  background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
 }
 
 .filter {
@@ -136,10 +136,138 @@ input[type="checkbox"]{
   margin-top: 30px;
 }
 
-.cost {
+.filter-range {
   margin-left: 220px;
   margin-right: 0px;
+
+  width: 330px;
+  color: #ffffff;
 }
+
+.filter-range .h2-choose {
+  margin-bottom: 9px;
+}
+
+.price-control {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-control::after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%)
+}
+
+.price-control label {
+  display: inline-block;
+
+  font-size:14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-control .min-price,
+.price-control .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-control input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-control {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-control .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3)
+}
+
+.range-control .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+
+  position: absolute;
+  top: -9px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0  rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
 
 /*sort*/
 .result {
@@ -262,20 +390,57 @@ input[type="checkbox"]{
   margin-left: 418px;
 }
 
+
 /*footer*/
-.footer .container {
+.footer .container{
   height: 122px;
-  background-color: red;
   display: flex;
-  justify-content: space-between;
 }
 
 .visit-sedona {
   width: 328px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 50px 61px;
+}
+
+.footer-social {
+  width: 400px;
+  font-size: 0px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 26px;
+  height: 28px;
+  margin-top: 37px;
+  margin-right: 6px;
+  background: #81b3d2 url("../img/spritesheet.png") no-repeat;
+  border: 10px solid #81b3d2;
+}
+
+.footer-social .tw {
+  background-position: -1px -27px;
+}
+
+.footer-social .yt {
+  background-position: -2px -53px;
+  margin-right: 126px;
 }
 
 .footer-copyright {
   width: 328px;
-  background: white;
 }
 
+.footer-copyright span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 48px;
+  line-height: 26px;
+}
+
+.footer-copyright img {
+  margin-left: 10px;
+  margin-top: 41px;
+}
