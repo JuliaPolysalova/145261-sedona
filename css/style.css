@@ -8,7 +8,7 @@ body {
   color: #000000;
   background-color: #ffffff;
 
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
@@ -56,16 +56,14 @@ h3 {
 }
 
 /*header сетка*/
-.main-header {
-  min-height: 56px;
-}
 
 .container {
   width: 1056px;
   margin: 0 auto;
+  position: relative;
 }
 .main-nav {
-  font-size: 0px;
+  font-size: 0;
 }
 .main-nav a{
   text-decoration: none;
@@ -95,7 +93,7 @@ h3 {
 
 .logo {
   position: absolute;
-  left: 600px;
+  left: 460px;
   width: 138;
   height: 70;
 }
@@ -110,13 +108,11 @@ h3 {
 /*filter*/
 .filter {
   background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
-}
+  color: #ffffff;
 
-.filter {
   display: flex;
   flex-direction: row;
   height: 218px;
-  color: #ffffff;
 }
 
 .choose {
@@ -277,11 +273,9 @@ input[type="checkbox"]{
 
 .sort {
   font-size: 0;
-  height: 87px;
-  border-bottom: 1px solid #cccccc;
 }
 
-.sort h2 {
+.hotels-found {
   font-size: 21px;
 
   display: inline-block;
@@ -335,13 +329,30 @@ input[type="checkbox"]{
 
 /*content*/
 .hotel {
-  height: 152px;
-  border-bottom: 1px solid #cccccc;
   font-size: 0;
+  padding-bottom: 31px;
+}
+
+.hotel::before {
+position: absolute;
+content: "";
+width: 1200px;
+height: 1px;
+background-color: #e5e5e5;
+left: -72px;
+}
+
+.hotel:last-child::after {
+position: absolute;
+content: "";
+width: 1200px;
+height: 1px;
+background-color: #e5e5e5;
+bottom: 0;
+left: -72px;
 }
 
 .hotel img {
-  margin-top: 31px;
   margin-right: 31px;
 }
 
@@ -350,7 +361,6 @@ input[type="checkbox"]{
 
   display: inline-block;
   vertical-align: top;
-  margin-top: 11px;
   width: 360px;
 }
 
@@ -378,18 +388,26 @@ input[type="checkbox"]{
 
 .hotel-rating {
   display: inline-block;
+  position: relative;
   font-size: 14px;
   color: #666666;
   text-align: top;
 }
 
 .hotel-rating .rating {
+  display: inline-block;
   background-color: #f2f2f2;
   padding: 3px 16px;
   margin-top: 94px;
-  margin-left: 418px;
+  margin-left: 318px;
 }
 
+.stars-5 {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  background: blue;
+}
 
 /*footer*/
 .footer .container{
