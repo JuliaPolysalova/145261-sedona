@@ -25,70 +25,66 @@
     </header>
 
     <main>
+
+      <section class="find">
+        <form class="filter">
+          <div class="choose">
+            <h2 class="h2-choose">Инфраструктура:</h2>
+            <div>
+              <input type="checkbox" id="pool" checked>
+              <label for="pool">БАССЕЙН</label>
+            </div>
+            <div>
+              <input type="checkbox" id="parking">
+              <label for="parking">ПАРКОВКА</label>
+            </div>
+          </div>
+
+          <div class="choose">
+            <h2 class="h2-choose">Тип жилья:</h2>
+            <div>
+              <input type="checkbox" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </div>
+            <div>
+              <input type="checkbox" id="motel" checked>
+              <label for="motel">МОТЕЛЬ</label>
+           </div>
+           <div>
+              <input type="checkbox" id="flat" checked>
+              <label for="flat">АПАРТАМЕНТЫ</label>
+            </div>
+          </div>
+
+          <div class="filter-range">
+            <h2 class="h2-choose">Стоимость в сутки(р):</h2>
+
+            <div class="price-control">
+              <label class="min-price">
+              от<input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+              до<input type="text" name="max-price" value="3000">
+              </label>
+            </div>
+
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
+      </section>
+
       <div class="container">
-
-        <section class="find">
-          <form class="filter">
-            <div class="choose">
-              <h2 class="h2-choose">Инфраструктура:</h2>
-              <div>
-                <input type="checkbox" id="pool" checked>
-                <label for="pool">БАССЕЙН</label>
-              </div>
-              <div>
-                <input type="checkbox" id="parking">
-                <label for="parking">ПАРКОВКА</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wifi">
-                <label for="wifi">Wi-Fi</label>
-              </div>
-            </div>
-
-            <div class="choose">
-              <h2 class="h2-choose">Тип жилья:</h2>
-                <div>
-                  <input type="checkbox" id="hotel" checked>
-                  <label for="hotel">Гостиница</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="motel" checked>
-                  <label for="motel">МОТЕЛЬ</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="flat" checked>
-                  <label for="flat">АПАРТАМЕНТЫ</label>
-                </div>
-            </div>
-
-            <div class="filter-range">
-              <h2 class="h2-choose">Стоимость в сутки(р):</h2>
-
-              <div class="price-control">
-                <label class="min-price">
-                от<input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                до<input type="text" name="max-price" value="3000">
-                </label>
-              </div>
-
-              <div class="range-control">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-
-              <button class="btn-transparent" type="submit">Показать</button>
-            </div>
-          </form>
-        </section>
-
         <section class="result">
           <div class="sort">
-            <h2 class="hotels-found sort">Найдено:3</h2>
+            <h2 class="hotels-found">Найдено:3</h2>
             <div class="sort-options">
               <span>Сортировка:</span>
               <a href="#" class="active">По цене</a>
@@ -111,7 +107,7 @@
               <a class="button-brown" href="#">Забронировать</a>
             </div>
             <div class="hotel-rating">
-              <span class="stars-5"></span>
+              <span class="stars-5">dgxse</span>
               <span class="rating">Рейтинг 8,5</span>
             </div>
           </div>
