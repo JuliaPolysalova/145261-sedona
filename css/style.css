@@ -99,12 +99,101 @@ h3 {
 }
 
 /*index ceтка*/
+main {
+  margin: 0 auto;
+}
 
+.background {
+	background: url("../img/background.jpg") no-repeat;
+  height: 564px;
+}
+
+.background img {
+  margin-left: 371px;
+  margin-top: 76px;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.reason-title {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 576px;
+  margin: 62px 312px 51px 312px;
+  font-size: 0px;
+}
+
+.reason-title p {
+  height-line: 26px;
+  margin-top: 34px;
+  font-size: 14px;
+  height-line: 26px;
+}
+
+
+.reason-about {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+
+  min-height: 148px;
+  width: 294px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 51px 51px;
+}
+
+.features div {
+  display: inline-block;
+  position: relative;
+
+  text-align: center;
+  background: red;
+  width: 309px;
+  margin-right: -4px;
+  padding: 160px 51px 83px 40px; /*переделать*/
+}
+
+.motel::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/motel.png") no-repeat;
+  top: 61px;
+  right: 162px;
+  width: 75px;
+  height: 72px;
+}
+/*еще картинки*/
+
+.reason3,
+.reason4,
+.reason5 {
+  display: inline-block;
+
+  text-align: center;
+  background: #eeeeee;
+  width: 239px;
+  margin-right: -4px;
+  padding: 45px 88px 62px 73px;
+}
+
+.interested {
+  display: inline-block;
+  text-align: center;
+  width:420px;
+  padding: 56px 390px 49px 390px;
+}
 
 
 
 /*hotels ceтка*/
-
 /*filter*/
 .filter {
   background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
