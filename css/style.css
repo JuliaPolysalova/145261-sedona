@@ -48,7 +48,7 @@ h3 {
   line-height: 21px;
 }
 
-.interested .h2 {
+.interested h2 {
   font-size: 30px;
   font-weight: bold;
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -65,7 +65,7 @@ h3 {
 .main-nav {
   font-size: 0;
 }
-.main-nav a{
+.main-nav a {
   text-decoration: none;
   color: #000000;
   text-align: top;
@@ -92,12 +92,16 @@ h3 {
   text-align: right;
 }
 
+.main-nav a:hover {
+  color: #81b3d2;
+}
 .logo {
   position: absolute;
   left: 460px;
   width: 138px;
   height: 70px;
 }
+
 
 /*index ceткa*/
 .main-index {
@@ -135,12 +139,10 @@ h3 {
   font-size: 14px;
 }
 
-.reason1 {
-  font-size: 0;
-}
-
+.reason1,
 .reason2 {
   font-size: 0;
+  height: 256px;
 }
 
 .reason-about {
@@ -178,6 +180,30 @@ h3 {
   width: 75px;
   height: 72px;
 }
+
+.food::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/food.png") no-repeat;
+  top: 61px;
+  right: 162px;
+  width: 75px;
+  height: 72px;
+}
+
+.souvenirs::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/souvenirs.png") no-repeat;
+  top: 61px;
+  right: 162px;
+  width: 75px;
+  height: 72px;
+}
 /*еще картинки*/
 .reason345 {
   padding: 35px 0px 52px 16px;
@@ -198,18 +224,15 @@ h3 {
 }
 
 .interested {
+  position: relative;
+
   display: inline-block;
   text-align: center;
   width:440px;
   padding: 38px 380px 49px 380px;
-
-  position: relative;
 }
 
-.form-index {
-/*  position: absolute;
-  z-index: 10; */
-
+.form-position {
   width: 569px;
   min-height: 482px;
   margin: 0 auto;
@@ -224,6 +247,7 @@ h3 {
   color: #ffffff;
 
   background: #766357;
+  border: 0;
 
   display: inline-block;
   text-align: center;
@@ -233,12 +257,21 @@ h3 {
   padding-top: 19px;
 }
 
-
 .form-container {
   margin: 55px;
   width: 459px;
+  backgrpund: red;
   background: #ffffff;
   display: inline-block;
+
+  position: absolute;
+  left: 300px;
+}
+
+.form-index {
+  width: 1200px;
+  height: 539px;
+  background: url("../img/map.jpg") center no-repeat;
 }
 
 .date {
@@ -269,7 +302,7 @@ h3 {
   margin: 0 52px 54px 39px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
-  font-size: 14px
+  font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
@@ -615,11 +648,10 @@ left: -72px;
 }
 
 /*footer*/
+
 .footer .container {
   height: 122px;
   display: flex;
-
-  position: relative;
 }
 
 .visit-sedona {
