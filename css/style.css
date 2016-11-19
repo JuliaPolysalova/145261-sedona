@@ -99,8 +99,8 @@ h3 {
   height: 70px;
 }
 
-/*index ceтка*/
-main {
+/*index ceткa*/
+.main-index {
   margin: 0 auto;
 }
 
@@ -253,7 +253,7 @@ main {
   margin-bottom: 29px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
-  font-size: 14px
+  font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
@@ -303,25 +303,26 @@ main {
   background-color: pink;
 
   background: pink url("../img/map.jpg") center no-repeat; */
-}
-
 
 /*hotels ceтка*/
 /*filter*/
 
-.filter {
-  background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
-  color: red;
 
-  display: flex;
-  flex-direction: row;
-  height: 218px;
-  padding-left: 73px;
-  padding-right: 73px;
-}
+.filter {
+    background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
+    color: #ffffff;
+
+
+    display: flex;
+    flex-direction: row;
+    height: 218px;
+    padding-left: 73px;
+    padding-right: 73px;
+  }
 
 .choose {
   width: 254px;
+  display: inline-block;
 }
 
 .choose label{
@@ -338,9 +339,9 @@ input[type="checkbox"]{
 }
 
 .filter-range {
+  display: inline-block;
   margin-left: 218px;
   margin-right: 0px;
-
   width: 330px;
   color: #ffffff;
 }
@@ -515,7 +516,6 @@ input[type="checkbox"]{
 }
 
 .cursor {
-  background: red;
   display: inline-block;
   margin: 30px 458px;
   margin-right: 0px;
