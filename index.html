@@ -45,7 +45,7 @@
           </div>
 
           <div class="features">
-            <div class="motel">
+            <div class="index-motel">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
@@ -70,54 +70,56 @@
 
           <div class="reason345">
           <div class="reason3">
-            <h3>Небольшая площадь</h3>
+            <h3>Небольшая<br>площадь</h3>
             <span class="number">№3</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримечательности<br>находятся очень близко</p>
           </div>
 
           <div class="reason4">
-            <h3>Красивая дорога</h3>
+            <h3>Красивая<br>дорога</h3>
             <span class="number">№4</span>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>
           </div>
 
           <div class="reason5">
-            <h3>Мало туристов</h3>
+            <h3>Мало<br>туристов</h3>
             <span class="number">№5</span>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <p>Большинство едет в гранд каньон и<br>толпится там</p>
           </div>
           </div>
 
         </section>
 
         <div class="interested">
-          <h2>Заинтерисовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
 
-        <form>
-          <fieldset>
-            <legend>Поиск гостиницы в седоне</legend>
-            <label for="arrival-date">Дата заезда</label>
+        <form class="form-index">
+
+          <div class="form-title">Поиск гостиницы в седоне</div>
+
+          <div class="form-container">
+            <label for="arrival-date">Дата заезда:</label>
             <input type="text" id="arrival-date" class="date" placeholder="24 апреля 2016">
-            <span class="calendar"></span>
+          <!--<span class="calendar"></span>-->
 
-            <label for="departure-date">Дата выезда</label>
+            <label for="departure-date">Дата выезда:</label>
             <input type="text" id="departure-date" class="date" placeholder="4 июля 2016">
-            <span class="calendar"></span>
+            <!--<span class="calendar"></span>-->
 
-            <label for="adults">Взрослые</label>
-            <span class="plus"></span>
-            <input type="text" id="adults" value="2">
-            <span class="minus"></span>
+            <label for="adults">Взрослые:</label>
+            <!--<span class="plus"></span>-->
+            <input type="text" id="adults" class="form-number" value="2">
+            <!--<span class="minus"></span>-->
 
-            <label for="child">Дети</label>
-            <span class="plus"></span>
-            <input type="text" id="child" value="2">
-            <span class="minus"></span>
+            <label for="child">Дети:</label>
+            <!--<span class="plus"></span>-->
+            <input type="text" id="child" class="form-number" value="0">
+            <!--<span class="minus"></span>-->
 
-            <button type="submit" class="find">Найти</button>
-          </fieldset>
+            <button type="submit" class="form-find">Найти</button>
+          </div>
         </form>
     </main>
 
