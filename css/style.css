@@ -48,7 +48,7 @@ h3 {
   line-height: 21px;
 }
 
-.h2-intrested {
+.interested .h2 {
   font-size: 30px;
   font-weight: bold;
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -72,6 +72,7 @@ h3 {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
 
   display: inline-block;
   height: 24px;
@@ -94,8 +95,8 @@ h3 {
 .logo {
   position: absolute;
   left: 460px;
-  width: 138;
-  height: 70;
+  width: 138px;
+  height: 70px;
 }
 
 /*index ceтка*/
@@ -125,27 +126,35 @@ main {
   vertical-align: top;
   width: 576px;
   margin: 62px 312px 51px 312px;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .reason-title p {
-  height-line: 26px;
+  line-height: 26px;
   margin-top: 34px;
   font-size: 14px;
-  height-line: 26px;
 }
 
+.reason1 {
+  font-size: 0;
+}
+
+.reason2 {
+  font-size: 0;
+}
 
 .reason-about {
   display: inline-block;
   text-align: center;
   vertical-align: top;
 
-  min-height: 148px;
-  width: 294px;
+  min-height: 154px;
+  width: 298px;
   background-color: #81b3d2;
   color: #ffffff;
   padding: 51px 51px;
+
+  font-size: 14px;
 }
 
 .features div {
@@ -153,13 +162,12 @@ main {
   position: relative;
 
   text-align: center;
-  background: red;
   width: 309px;
   margin-right: -4px;
   padding: 160px 51px 83px 40px; /*переделать*/
 }
 
-.motel::before {
+.index-motel::before {
   content:"";
   display: block;
 
@@ -171,37 +179,145 @@ main {
   height: 72px;
 }
 /*еще картинки*/
+.reason345 {
+  padding: 35px 0px 52px 16px;
+  background: #eeeeee;
+}
 
 .reason3,
 .reason4,
 .reason5 {
   display: inline-block;
-
   text-align: center;
-  background: #eeeeee;
-  width: 239px;
-  margin-right: -4px;
-  padding: 45px 88px 62px 73px;
+  width: 339px;
+  margin-right: 60px;
+}
+
+.reason5 {
+  margin-right: 0;
 }
 
 .interested {
   display: inline-block;
   text-align: center;
-  width:420px;
-  padding: 56px 390px 49px 390px;
+  width:440px;
+  padding: 38px 380px 49px 380px;
+
+  position: relative;
 }
 
+.form-index {
+/*  position: absolute;
+  z-index: 10; */
+
+  width: 569px;
+  min-height: 482px;
+  margin: 0 auto;
+}
+
+
+.form-title {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  line-height: 26px;
+  color: #ffffff;
+
+  background: #766357;
+
+  display: inline-block;
+  text-align: center;
+
+  width: 569px;
+  min-height: 66px;
+  padding-top: 19px;
+}
+
+
+.form-container {
+  margin: 55px;
+  width: 459px;
+  background: #ffffff;
+  display: inline-block;
+}
+
+.date {
+  width: 322px;
+  height: 38px;
+  padding: 0 12px;
+
+  background: #f2f2f2 url("../img/calendar.png") no-repeat 313px;
+
+  border: 0px;
+  margin-left: 19px;
+  margin-bottom: 29px;
+
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-number {
+  width: 86px;
+  height: 38px;
+  padding: 0 14px;
+
+  background: #f2f2f2;
+  border: 0px;
+  margin: 0 52px 54px 39px;
+
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+#child {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.form-find {
+  width: 100%;
+  background-color: #81b3d2;
+  border: 0;
+  min-height: 58px;
+
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* .footer:before{
+  content:"";
+  position: absolute;
+  left: 0;
+  top: ;
+  width: 1200px;
+  height: 594px;
+  background-color: pink;
+
+  background: pink url("../img/map.jpg") center no-repeat; */
+}
 
 
 /*hotels ceтка*/
 /*filter*/
+
 .filter {
   background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
-  color: #ffffff;
+  color: red;
 
   display: flex;
   flex-direction: row;
   height: 218px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .choose {
@@ -222,7 +338,7 @@ input[type="checkbox"]{
 }
 
 .filter-range {
-  margin-left: 220px;
+  margin-left: 218px;
   margin-right: 0px;
 
   width: 330px;
@@ -295,7 +411,7 @@ input[type="checkbox"]{
 .range-control .scale {
   height: 2px;
 
-  background: rgba(255, 255, 255, 0.3)
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .range-control .bar {
@@ -499,9 +615,11 @@ left: -72px;
 }
 
 /*footer*/
-.footer .container{
+.footer .container {
   height: 122px;
   display: flex;
+
+  position: relative;
 }
 
 .visit-sedona {
