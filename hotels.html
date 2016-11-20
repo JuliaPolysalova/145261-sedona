@@ -1,784 +1,175 @@
-body {
-  font-size: 14px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 21px;
-  text-transform: uppercase;
-
-  color: #000000;
-  background-color: #ffffff;
-
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-h1 {
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 26px;
-}
-
-.h2-choose {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 21px;
-}
-
-.h2-found {
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 26px;
-}
-
-.h2-reasons {
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 21px;
-}
-
-h3 {
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 21px;
-}
-
-.interested h2 {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 24px;
-}
-
-/*header сетка*/
-
-.container {
-  width: 1056px;
-  margin: 0 auto;
-  position: relative;
-}
-.main-nav {
-  font-size: 0;
-}
-.main-nav a {
-  text-decoration: none;
-  color: #000000;
-  text-align: top;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-
-  display: inline-block;
-  height: 24px;
-  padding: 16px 0;
-  width: 128px;
-
-  position:relative;
-}
-
-.main-nav a:nth-child(2) {
-  margin-left: 113px;
-  margin-right: 318px;
-}
-
-.main-nav a:last-child {
-  margin-left: 113px;
-  text-align: right;
-}
-
-.main-nav a:hover {
-  color: #81b3d2;
-}
-
-.main-nav a:active {
-  color: #b2b2b2;
-}
-
-.logo {
-  position: absolute;
-  left: 460px;
-  width: 138px;
-  height: 70px;
-}
-
-
-/*index ceткa*/
-.main-index {
-  margin: 0 auto;
-}
-
-.background {
-	background: url("../img/background.jpg") no-repeat;
-  height: 564px;
-}
-
-.background img {
-  margin-left: 371px;
-  margin-top: 76px;
-}
-
-.reasons {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-.reason-title {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 576px;
-  margin: 62px 312px 51px 312px;
-  font-size: 0;
-}
-
-.reason-title p {
-  line-height: 26px;
-  margin-top: 34px;
-  font-size: 14px;
-}
-
-.reason1,
-.reason2 {
-  font-size: 0;
-  height: 256px;
-}
-
-.reason-about {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-
-  min-height: 154px;
-  width: 298px;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 51px 51px;
-
-  font-size: 14px;
-}
-
-.features div {
-  display: inline-block;
-  position: relative;
-
-  text-align: center;
-  width: 309px;
-  margin-right: -4px;
-  padding: 160px 51px 83px 40px; /*переделать*/
-}
-
-.index-motel::before {
-  content:"";
-  display: block;
-
-  position: absolute;
-  background: url("../img/motel.png") no-repeat;
-  top: 61px;
-  right: 162px;
-  width: 75px;
-  height: 72px;
-}
-
-.food::before {
-  content:"";
-  display: block;
-
-  position: absolute;
-  background: url("../img/food.png") no-repeat;
-  top: 61px;
-  right: 162px;
-  width: 75px;
-  height: 72px;
-}
-
-.souvenirs::before {
-  content:"";
-  display: block;
-
-  position: absolute;
-  background: url("../img/souvenirs.png") no-repeat;
-  top: 61px;
-  right: 162px;
-  width: 75px;
-  height: 72px;
-}
-/*еще картинки*/
-.reason345 {
-  padding: 35px 0px 52px 16px;
-  background: #eeeeee;
-}
-
-.reason3,
-.reason4,
-.reason5 {
-  display: inline-block;
-  text-align: center;
-  width: 339px;
-  margin-right: 60px;
-}
-
-.reason5 {
-  margin-right: 0;
-}
-
-.interested {
-  position: relative;
-
-  display: inline-block;
-  text-align: center;
-  width:440px;
-  padding: 38px 380px 49px 380px;
-}
-
-.form-position {
-  position: relative;
-}
-
-
-.form-title {
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 26px;
-  color: #ffffff;
-
-  background: #766357;
-  border: 0;
-
-  display: block;
-  margin: 0 auto;
-
-  width: 569px;
-  min-height: 66px;
-  padding-top: 19px;
-}
-
-.form-index {
-  width: 459px;
-  padding: 55px;
-  background: red;
-
-  position: absolute;
-  left: 315px;
-
-}
-
-.map {
-  width: 1200px;
-  height: 539px;
-  background: url("../img/map.jpg") center no-repeat;
-  background-position: 50%;
-}
-
-.date {
-  width: 322px;
-  height: 38px;
-  padding: 0 12px;
-
-  background: #f2f2f2 url("../img/calendar.png") no-repeat 313px;
-
-  border: 0px;
-  margin-left: 19px;
-  margin-bottom: 29px;
-
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #000000;
-}
-
-.form-number {
-  width: 86px;
-  height: 38px;
-  padding: 0 14px;
-
-  background: #f2f2f2;
-  border: 0px;
-  margin: 0 52px 54px 39px;
-
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #000000;
-}
-
-#child {
-  margin-right: 0;
-  margin-left: 20px;
-}
-
-.form-find {
-  width: 100%;
-  background-color: #81b3d2;
-  border: 0;
-  min-height: 58px;
-
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-/* .footer:before{
-  content:"";
-  position: absolute;
-  left: 0;
-  top: ;
-  width: 1200px;
-  height: 594px;
-  background-color: pink;
-
-  background: pink url("../img/map.jpg") center no-repeat; */
-
-/*hotels ceтка*/
-/*filter*/
-
-
-.filter {
-    background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
-    color: #ffffff;
-
-
-    display: flex;
-    flex-direction: row;
-    height: 218px;
-    padding-left: 73px;
-    padding-right: 73px;
-  }
-
-.choose {
-  width: 254px;
-  display: inline-block;
-}
-
-.choose label{
-  display: block;
-  margin-bottom: 33px;
-}
-
-input[type="checkbox"]{
-  display: none;
-}
-
-.h2-choose {
-  margin-top: 30px;
-}
-
-.filter-range {
-  display: inline-block;
-  margin-left: 218px;
-  margin-right: 0px;
-  width: 330px;
-  color: #ffffff;
-}
-
-.filter-range .h2-choose {
-  margin-bottom: 9px;
-}
-
-.price-control {
-  position: relative;
-
-  height: 36px;
-  margin-bottom: 20px;
-
-  font-size: 0px;
-
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-
-.price-control::after {
-  content:"";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-  transform: translate(-50%, -50%)
-}
-
-.price-control label {
-  display: inline-block;
-
-  font-size:14px;
-  line-height: 38px;
-  vertical-align: top;
-
-  cursor: pointer;
-}
-
-.price-control .min-price,
-.price-control .max-price {
-  width: 90px;
-  padding-left: 65px;
-}
-
-.price-control input {
-  width: 50px;
-  margin: 0;
-
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.range-control {
-  position: relative;
-
-  margin-bottom: 32px;
-}
-
-.range-control .scale {
-  height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.range-control .bar {
-  width: 80%;
-  height: 2px;
-
-  background: #ffffff;
-}
-
-.range-toggle {
-  width: 4px;
-  height: 4px;
-
-  position: absolute;
-  top: -9px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0  rgba(0, 1, 1, 0.2);
-  cursor: pointer;
-}
-
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
-.range-toggle-min {
-  left: 0;
-}
-
-.range-toggle-max {
-  left: 80%;
-}
-
-.btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn-transparent:hover {
-  color: #000000;
-  background: #ffffff;
-}
-
-
-/*sort*/
-.result {
-  display: flex;
-  flex-direction: column;
-}
-
-.sort {
-  font-size: 0;
-}
-
-.hotels-found {
-  font-size: 21px;
-
-  display: inline-block;
-  width: 165px;
-  margin-top: 31px;
-  vertical-align: top;
-}
-
-.sort-options {
-  font-size: 12px;
-  line-height: 18px;
-
-  display: inline-block;
-  margin-top: 35px;
-  vertical-align: top;
-}
-
-.sort span {
-  margin-right: 39px;
-}
-
-.sort a {
-  color: #cccccc;
-  margin-right: 34px;
-  text-decoration: none;
-  border-bottom: 1px dotted #9ec5dd;
-}
-
-.sort-options .sort-active {
-  color: #9ec5dd;
-  border-bottom: 0;
-}
-
-.sort-options a:not(.sort-active):hover {
-  color: #9ec5dd;
-}
-
-.sort-options a:not(.sort-active):active {
-  color: #000000;
-}
-
-.cursor {
-  display: inline-block;
-  margin: 30px 458px;
-  margin-right: 0px;
-  width: 10px;
-  height: 11px;
-}
-
-.up {
-  background: url("../img/up.png") no-repeat;
-}
-
-.down {
-  margin-left: 14px;
-  background: url("../img/bl_down.png") no-repeat;
-}
-
-/*content*/
-.hotel {
-  font-size: 0;
-  padding-bottom: 31px;
-}
-
-.hotel::before {
-position: absolute;
-content: "";
-width: 1200px;
-height: 1px;
-background-color: #e5e5e5;
-left: -72px;
-}
-
-.hotel:last-child::after {
-position: absolute;
-content: "";
-width: 1200px;
-height: 1px;
-background-color: #e5e5e5;
-bottom: 0;
-left: -72px;
-}
-
-.hotel img {
-  margin-right: 31px;
-}
-
-.about-hotel {
-  font-size: 14px;
-
-  display: inline-block;
-  vertical-align: top;
-  width: 265px;
-}
-
-
-.about-hotel span {
-  display: inline-block;
-  width: 118px;
-  background: red;
-  margin-bottom: 17px;
-}
-
-.about-hotel a {
-  text-decoration: none;
-  padding: 4px 17px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.about-hotel .button-blue {
-  background-color: #81b3d2;
-  margin-right: 7px;
-}
-
-.about-hotel .button-blue:hover {
-  background-color: #669ec0;
-}
-
-.about-hotel .button-blue:active {
-  background-color: #5496bd;
-  color: #88b6d1;
-}
-
-.about-hotel .button-brown {
-  background-color: #766357;
-}
-
-.about-hotel .button-brown:hover {
-  background-color: #604e43;
-}
-
-.about-hotel .button-brown:active {
-  background-color: #503e33;
-  color: #857871;
-}
-
-
-.hotel-rating {
-  display: inline-block;
-  position: relative;
-  font-size: 14px;
-  color: #666666;
-  text-align: top;
-}
-
-.hotel-rating .rating {
-  display: inline-block;
-  background-color: #f2f2f2;
-  padding: 3px 16px;
-  margin-top: 94px;
-  margin-left: 318px;
-}
-
-.stars-5 {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  background: blue;
-}
-
-/*footer*/
-.footer-position {
-  margin-top: -122px;
-}
-
-.footer .container {
-  display: flex;
-
-  height: 122px;
-  width: 1200px;
-  background: #ffffff;
-  opacity: 0.9;
-}
-
-.visit-sedona {
-  width: 328px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  font-family:  "PT Sans Bold", "Arial", sans-serif;
-  margin: 50px 111px;
-}
-
-.footer-social {
-  width: 400px;
-  font-size: 0px;
-}
-
-.footer-social a {
-  display: inline-block;
-  width: 26px;
-  height: 28px;
-  margin-top: 37px;
-  margin-right: 6px;
-  background: #81b3d2 url("../img/spritesheet.png") no-repeat;
-  border: 10px solid #81b3d2;
-}
-
-.footer-social .fb {
-  background-position: 4px -487px;
-}
-
-.footer-social .fb:hover {
-  background: #669ec0 url("../img/spritesheet.png") no-repeat;
-  background-position: 4px -487px;
-  border: 10px solid #669ec0;
-}
-
-.footer-social .fb:active {
-  background: #5496bd url("../img/spritesheet.png") no-repeat;
-  background-position: 4px -487px;
-  border: 10px solid #5496bd;
-}
-
-.footer-social .tw {
-  background-position: 1px -515px;
-}
-
-.footer-social .tw:hover {
-  background: #669ec0 url("../img/spritesheet.png") no-repeat;
-  background-position: 1px -515px;
-  border: 10px solid #669ec0;
-}
-
-.footer-social .tw:active {
-  background: #5496bd url("../img/spritesheet.png") no-repeat; /*прозрачность у иконок*/
-  background-position: 1px -515px;
-  border: 10px solid #5496bd;
-}
-
-.footer-social .yt {
-  background-position: -2px -540px;
-  margin-right: 126px;
-}
-
-.footer-social .yt:hover {
-  background: #669ec0 url("../img/spritesheet.png") no-repeat;
-  background-position: -2px -540px;
-  border: 10px solid #669ec0;
-}
-
-.footer-social .yt:active {
-  background: #5496bd url("../img/spritesheet.png") no-repeat;
-  background-position: -2px -540px;
-  border: 10px solid #5496bd;
-  opacity: 0.3;
-}
-
-.footer-copyright {
-  width: 328px;
-}
-
-.footer-copyright span {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 48px;
-  line-height: 26px;
-}
-
-.footer-copyright img {
-  margin-left: 10px;
-  margin-top: 41px;
-}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"  rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
+        </div>
+
+        <nav class="main-nav">
+
+          <a href="#">Информация</a>
+          <a href="#">Фото и видео</a>
+          <a href="#">Карта штата</a>
+          <a >Гостиницы</a>
+
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="find">
+        <form class="filter">
+          <div class="choose">
+            <h2 class="h2-choose">Инфраструктура:</h2>
+            <div>
+              <input type="checkbox" id="pool" checked>
+              <label for="pool">БАССЕЙН</label>
+            </div>
+            <div>
+              <input type="checkbox" id="parking">
+              <label for="parking">ПАРКОВКА</label>
+            </div>
+            <div>
+              <input type="checkbox" id="wifi">
+              <label for="wifi">Wi-fi</label>
+            </div>
+          </div>
+
+          <div class="choose">
+            <h2 class="h2-choose">Тип жилья:</h2>
+            <div>
+              <input type="checkbox" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </div>
+            <div>
+              <input type="checkbox" id="motel" checked>
+              <label for="motel">МОТЕЛЬ</label>
+           </div>
+           <div>
+              <input type="checkbox" id="flat" checked>
+              <label for="flat">АПАРТАМЕНТЫ</label>
+            </div>
+          </div>
+
+          <div class="filter-range">
+            <h2 class="h2-choose">Стоимость в сутки(р):</h2>
+
+            <div class="price-control">
+              <label class="min-price">
+              от<input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+              до<input type="text" name="max-price" value="3000">
+              </label>
+            </div>
+
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="container">
+        <section class="result">
+          <div class="sort">
+            <h2 class="hotels-found">Найдено:3</h2>
+            <div class="sort-options">
+              <span>Сортировка:</span>
+              <a href="#" class="sort-active">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По рейтингу</a>
+            </div>
+
+            <div class="cursor up"></div>
+            <div class="cursor down"></div>
+          </div>
+
+          <div class="hotel">
+            <img src="img/hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
+
+            <div class="about-hotel">
+              <h2 class="h2-found">Amara Resort & Spa</h2>
+              <span>Гостиница</span>
+              <span>от 3500 р.</span>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars-5">dgxse</span>
+              <span class="rating">Рейтинг 8,5</span>
+            </div>
+          </div>
+
+          <div class="hotel">
+            <img src="img/hotel2.jpg" alt="Desert Quail Inn" width="135" height="90">
+            <div class="about-hotel">
+              <h2 class="h2-found">Desert Quail Inn</h2>
+              <span>Мотель</span>
+              <span>от 2500 р.</span>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars-2"></span>
+              <span class="rating">Рейтинг 8,9</span>
+            </div>
+          </div>
+
+          <div class="hotel">
+            <img src="img/hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+
+            <div class="about-hotel">
+              <h2 class="h2-found">Villas at Poco Diablo</h2>
+              <span>Апартаменты</span>
+              <span>от 4000 р.</span>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars-3"></span>
+              <span class="rating">Рейтинг 9,2</span>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="visit-sedona">
+          &#035;VISITSEDONA
+        </div>
+
+        <section class="footer-social">
+          <a class="tw" href="#"><span>Twitter</span></a>
+          <a class="fb" href="#"><span>Facebook</span></a>
+          <a class="yt" href="#"><span>YouTube</span></a>
+        </section>
+
+        <section class="footer-copyright">
+          <span>WEBSITE BY</span>
+          <img src="img/logo_html.png" class="html-logo" alt="HTML Academy" width="113" height="39">
+        </section>
+      </div>
+    </footer>
+
+  </body>
+</html>
