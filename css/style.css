@@ -233,9 +233,7 @@ h3 {
 }
 
 .form-position {
-  width: 569px;
-  min-height: 482px;
-  margin: 0 auto;
+  position: relative;
 }
 
 
@@ -249,29 +247,29 @@ h3 {
   background: #766357;
   border: 0;
 
-  display: inline-block;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 
   width: 569px;
   min-height: 66px;
   padding-top: 19px;
 }
 
-.form-container {
-  margin: 55px;
+.form-index {
   width: 459px;
-  backgrpund: red;
-  background: #ffffff;
-  display: inline-block;
+  padding: 55px;
+  background: red;
 
   position: absolute;
-  left: 300px;
+  left: 315px;
+
 }
 
-.form-index {
+.map {
   width: 1200px;
   height: 539px;
   background: url("../img/map.jpg") center no-repeat;
+  background-position: 50%;
 }
 
 .date {
@@ -648,10 +646,16 @@ left: -72px;
 }
 
 /*footer*/
+.footer-position {
+  margin-top: -122px;
+}
 
 .footer .container {
   height: 122px;
   display: flex;
+  width: 1200px;
+  background: #ffffff;
+  opacity: 90%;
 }
 
 .visit-sedona {
@@ -659,6 +663,7 @@ left: -72px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  font-family:  "PT Sans Bold", "Arial", sans-serif;
   margin: 50px 61px;
 }
 
