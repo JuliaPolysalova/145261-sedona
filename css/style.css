@@ -95,6 +95,11 @@ h3 {
 .main-nav a:hover {
   color: #81b3d2;
 }
+
+.main-nav a:active {
+  color: #b2b2b2;
+}
+
 .logo {
   position: absolute;
   left: 460px;
@@ -541,9 +546,17 @@ input[type="checkbox"]{
   border-bottom: 1px dotted #9ec5dd;
 }
 
-.sort-options .active {
+.sort-options .sort-active {
   color: #9ec5dd;
   border-bottom: 0;
+}
+
+.sort-options a:not(.sort-active):hover {
+  color: #9ec5dd;
+}
+
+.sort-options a:not(.sort-active):active {
+  color: #000000;
 }
 
 .cursor {
@@ -597,12 +610,14 @@ left: -72px;
 
   display: inline-block;
   vertical-align: top;
-  width: 360px;
+  width: 265px;
 }
+
 
 .about-hotel span {
   display: inline-block;
   width: 118px;
+  background: red;
   margin-bottom: 17px;
 }
 
@@ -618,9 +633,28 @@ left: -72px;
   margin-right: 7px;
 }
 
+.about-hotel .button-blue:hover {
+  background-color: #669ec0;
+}
+
+.about-hotel .button-blue:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
 .about-hotel .button-brown {
   background-color: #766357;
 }
+
+.about-hotel .button-brown:hover {
+  background-color: #604e43;
+}
+
+.about-hotel .button-brown:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
 
 .hotel-rating {
   display: inline-block;
@@ -651,8 +685,9 @@ left: -72px;
 }
 
 .footer .container {
-  height: 122px;
   display: flex;
+
+  height: 122px;
   width: 1200px;
   background: #ffffff;
   opacity: 0.9;
@@ -664,7 +699,7 @@ left: -72px;
   line-height: 26px;
   font-weight: bold;
   font-family:  "PT Sans Bold", "Arial", sans-serif;
-  margin: 50px 61px;
+  margin: 50px 111px;
 }
 
 .footer-social {
@@ -682,13 +717,54 @@ left: -72px;
   border: 10px solid #81b3d2;
 }
 
+.footer-social .fb {
+  background-position: 4px -487px;
+}
+
+.footer-social .fb:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: 4px -487px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .fb:active {
+  background: #5496bd url("../img/spritesheet.png") no-repeat;
+  background-position: 4px -487px;
+  border: 10px solid #5496bd;
+}
+
 .footer-social .tw {
-  background-position: -1px -27px;
+  background-position: 1px -515px;
+}
+
+.footer-social .tw:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: 1px -515px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .tw:active {
+  background: #5496bd url("../img/spritesheet.png") no-repeat; /*прозрачность у иконок*/
+  background-position: 1px -515px;
+  border: 10px solid #5496bd;
 }
 
 .footer-social .yt {
-  background-position: -2px -53px;
+  background-position: -2px -540px;
   margin-right: 126px;
+}
+
+.footer-social .yt:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: -2px -540px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .yt:active {
+  background: #5496bd url("../img/spritesheet.png") no-repeat;
+  background-position: -2px -540px;
+  border: 10px solid #5496bd;
+  opacity: 0.3;
 }
 
 .footer-copyright {
