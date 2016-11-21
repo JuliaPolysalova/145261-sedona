@@ -11,7 +11,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 15px 5px 50px grey;
+  box-shadow: 0 5px 15px 0 #d1d1d1;
 }
 
 
@@ -27,6 +27,7 @@ h1 {
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
+  margin-bottom: 5px;
 }
 
 .h2-reasons {
@@ -84,7 +85,6 @@ h3 {
 .main-nav a:last-child,
 .main-nav a:nth-child(3) {
   text-align: right;
-  background: red;
 }
 
 .main-nav a:hover {
@@ -636,7 +636,7 @@ input[type="checkbox"]:checked + label::before {
   display: inline-block;
   margin-top: 38px;
   margin-left: 466px;
-  margin-bottom: 26px;
+  margin-bottom: 36px;
   width: 10px;
   height: 11px;
   border: none;
@@ -702,7 +702,6 @@ input[type="checkbox"]:checked + label::before {
 /*content*/
 .hotel {
   font-size: 0;
-  padding-bottom: 30px;
 }
 
 .hotel::before {
@@ -740,9 +739,8 @@ left: -72px;
 
 .about-hotel span {
   display: inline-block;
-  width: 118px;
-  margin-bottom: 6px;
-  margin-top: -20px;
+  width: 113px;
+  margin-bottom: 18px;
 }
 
 .about-hotel .btn {
@@ -798,25 +796,29 @@ left: -72px;
 
 .hotel-rating {
   display: inline-block;
-  position: relative;
   font-size: 14px;
   color: #666666;
-  text-align: top;
+  width: 112px;
+
+  float: right;
 }
 
 .hotel-rating .rating {
   display: inline-block;
   background-color: #f2f2f2;
   padding: 3px 16px;
-  margin-top: 94px;
-  margin-left: 318px;
 }
 
-.stars-5 {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  background: blue;
+.stars {
+  float: right;
+  display: inline-block;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 18px;
+  height: 17px;
+  background-position: -5px -572px;
+  margin-top: 30px;
+  margin-bottom: 48px;
+  margin-right: 2px;
 }
 
 /*footer*/
@@ -834,12 +836,13 @@ left: -72px;
 }
 
 .visit-sedona {
-  width: 328px;
+  width: 305px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  font-family:  "PT Sans Bold", "Arial", sans-serif;
-  margin: 50px 111px;
+  font-family: inherit;
+  margin: 48px 111px;
+  padding-left: 20px;
 }
 
 .footer-social {
@@ -915,14 +918,15 @@ left: -72px;
   display: inline-block;
   vertical-align: top;
   margin-top: 48px;
-  margin-right: 8px;
+  margin-left: 6px;
+  margin-right: 6px;
   line-height: 26px;
 }
 
 .footer-cop a {
   display: inline-block;
 
-  margin-top: 40px;
+  margin-top: 43px;
   width: 113px;
   height: 39px;
   background: #ffffff url("../img/logo_html.png") no-repeat;
