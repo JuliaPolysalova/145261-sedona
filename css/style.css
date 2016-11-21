@@ -11,7 +11,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 15px 5px 50px grey;
 }
+
 
 h1 {
   font-size: 21px;
@@ -20,17 +22,10 @@ h1 {
   line-height: 26px;
 }
 
-.h2-choose {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
-  line-height: 21px;
-}
-
 .h2-found {
   font-size: 21px;
   font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
 }
 
@@ -72,24 +67,24 @@ h3 {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: inherit;
 
   display: inline-block;
-  height: 24px;
-  padding: 16px 0;
-  width: 128px;
+  height: 27px;
+  padding: 15px 0;
+  width: 241px;
 
   position:relative;
 }
 
 .main-nav a:nth-child(2) {
-  margin-left: 113px;
-  margin-right: 318px;
+  margin-right: 92px;
 }
 
-.main-nav a:last-child {
-  margin-left: 113px;
+.main-nav a:last-child,
+.main-nav a:nth-child(3) {
   text-align: right;
+  background: red;
 }
 
 .main-nav a:hover {
@@ -393,32 +388,68 @@ nav .active:active {
 
     display: flex;
     flex-direction: row;
-    height: 218px;
-    padding-left: 73px;
-    padding-right: 73px;
+    height: 217px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 
 .choose {
-  width: 254px;
+  width: 262px;
   display: inline-block;
 }
 
-.choose label{
-  display: block;
-  margin-bottom: 33px;
-}
-
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
 
+input[type="checkbox"] + label {
+  display: block;
+  margin: 25px 0;
+  padding-left: 41px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -196px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -280px;
+}
+
+
+
 .h2-choose {
-  margin-top: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  margin-top: 26px;
 }
 
 .filter-range {
   display: inline-block;
-  margin-left: 218px;
+  margin-left: 230px;
   margin-right: 0px;
   width: 330px;
   color: #ffffff;
@@ -583,7 +614,7 @@ input[type="checkbox"]{
 
 .sort a {
   color: #cccccc;
-  margin-right: 34px;
+  margin-right: 30px;
   text-decoration: none;
   border-bottom: 1px dotted #9ec5dd;
 }
@@ -603,34 +634,84 @@ input[type="checkbox"]{
 
 .cursor {
   display: inline-block;
-  margin: 30px 458px;
-  margin-right: 0px;
+  margin-top: 38px;
+  margin-left: 466px;
+  margin-bottom: 26px;
   width: 10px;
   height: 11px;
+  border: none;
 }
 
 .up {
-  background: url("../img/up.png") no-repeat;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -604px;
+  cursor: pointer;
+}
+
+.up:hover {
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -466px;
+}
+
+.up:active {
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -40px;
 }
 
 .down {
   margin-left: 14px;
-  background: url("../img/bl_down.png") no-repeat;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -406px;
+  cursor: pointer;
 }
+
+.down:hover {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -436px;
+}
+
+.down:active {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -10px;
+}
+
+
+.btn-active {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -10px;
+}
+
 
 /*content*/
 .hotel {
   font-size: 0;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 }
 
 .hotel::before {
-position: absolute;
-content: "";
-width: 1200px;
-height: 1px;
-background-color: #e5e5e5;
-left: -72px;
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+  left: -72px;
 }
 
 .hotel:last-child::after {
@@ -645,6 +726,7 @@ left: -72px;
 
 .hotel img {
   margin-right: 31px;
+  margin-top: 30px;
 }
 
 .about-hotel {
@@ -653,12 +735,14 @@ left: -72px;
   display: inline-block;
   vertical-align: top;
   width: 270px;
+  min-height: 151px;
 }
 
 .about-hotel span {
   display: inline-block;
   width: 118px;
-  margin-bottom: 17px;
+  margin-bottom: 6px;
+  margin-top: -20px;
 }
 
 .about-hotel .btn {
@@ -666,9 +750,12 @@ left: -72px;
   padding: 4px 17px;
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 
 .h2-found a {
+  margin-top: 10px;
+  display: inline-block;
   color: #000000;
   text-decoration: none;
 }
@@ -683,7 +770,7 @@ left: -72px;
 
 .about-hotel .button-blue {
   background-color: #81b3d2;
-  margin-right: 7px;
+  margin-right: 3px;
 }
 
 .about-hotel .button-blue:hover {
