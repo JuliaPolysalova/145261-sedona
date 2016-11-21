@@ -11,14 +11,14 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 0 5px 15px 0 #d1d1d1;
+  box-shadow: 0 5px 15px 0 #f2f2f2;
 }
 
 
 h1 {
   font-size: 21px;
   font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
 }
 
@@ -40,7 +40,7 @@ h1 {
 h3 {
   font-size: 21px;
   font-weight: bold;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
 }
 
@@ -58,32 +58,38 @@ h3 {
   margin: 0 auto;
   position: relative;
 }
+
 .main-nav {
   font-size: 0;
 }
+
+ul {
+  display: inline-block;
+  padding: 14px 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  width: 241px;
+}
+
 .main-nav a {
   text-decoration: none;
   color: #000000;
-  text-align: top;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   font-family: inherit;
 
-  display: inline-block;
-  height: 27px;
-  padding: 15px 0;
-  width: 241px;
-
   position:relative;
 }
 
-.main-nav a:nth-child(2) {
-  margin-right: 92px;
+.main-nav li:nth-child(2) {
+  margin-right: 90px;
 }
 
-.main-nav a:last-child,
-.main-nav a:nth-child(3) {
+.main-nav li:last-child,
+.main-nav li:nth-child(3) {
   text-align: right;
 }
 
@@ -130,35 +136,40 @@ h3 {
   text-align: center;
   vertical-align: top;
   width: 576px;
-  margin: 62px 312px 51px 312px;
+  margin: 45px 312px 37px 312px;
   font-size: 0;
 }
 
 .reason-title p {
   line-height: 26px;
-  margin-top: 34px;
+  margin-top: 28px;
   font-size: 14px;
 }
 
 .reason1,
 .reason2 {
   font-size: 0;
-  height: 256px;
+
 }
 
 .reason-about {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-
-  min-height: 154px;
+  height: 192px;
   width: 298px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 51px 51px;
+  padding: 32px 51px;
 
   font-size: 14px;
 }
+
+.number {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 7px;
+} /*сделать декоративную линию*/
 
 .features div {
   display: inline-block;
@@ -167,7 +178,7 @@ h3 {
   text-align: center;
   width: 309px;
   margin-right: -4px;
-  padding: 160px 51px 83px 40px; /*переделать*/
+  padding: 130px 52px 83px 40px; /*переделать*/
 }
 
 .index-motel::before {
@@ -176,8 +187,8 @@ h3 {
 
   position: absolute;
   background: url("../img/motel.png") no-repeat;
-  top: 61px;
-  right: 162px;
+  top: 50px;
+  left: 162px;
   width: 75px;
   height: 72px;
 }
@@ -188,8 +199,8 @@ h3 {
 
   position: absolute;
   background: url("../img/food.png") no-repeat;
-  top: 61px;
-  right: 162px;
+  top: 50px;
+  left: 162px;
   width: 75px;
   height: 72px;
 }
@@ -200,8 +211,8 @@ h3 {
 
   position: absolute;
   background: url("../img/souvenirs.png") no-repeat;
-  top: 61px;
-  right: 162px;
+  top: 46px;
+  left: 165px;
   width: 75px;
   height: 76px;
 }
@@ -449,8 +460,7 @@ input[type="checkbox"]:checked + label::before {
 
 .filter-range {
   display: inline-block;
-  margin-left: 230px;
-  margin-right: 0px;
+  margin-left: 223px;
   width: 330px;
   color: #ffffff;
 }
@@ -461,6 +471,7 @@ input[type="checkbox"]:checked + label::before {
 
 .price-control {
   position: relative;
+  margin-left: 7px;
 
   height: 36px;
   margin-bottom: 20px;
@@ -514,7 +525,7 @@ input[type="checkbox"]:checked + label::before {
 
 .range-control {
   position: relative;
-
+  margin-left: 7px;
   margin-bottom: 32px;
 }
 
@@ -560,7 +571,7 @@ input[type="checkbox"]:checked + label::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 31px;
 
   font-size: 14px;
   line-height: 20px;
@@ -609,27 +620,28 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sort span {
-  margin-right: 39px;
+  margin-right: 36px;
 }
 
 .sort a {
   color: #cccccc;
   margin-right: 30px;
   text-decoration: none;
-  border-bottom: 1px dotted #9ec5dd;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-options .sort-active {
-  color: #9ec5dd;
+  color: #81b3d2;
   border-bottom: 0;
 }
 
 .sort-options a:not(.sort-active):hover {
-  color: #9ec5dd;
+  color: #81b3d2;
 }
 
 .sort-options a:not(.sort-active):active {
   color: #000000;
+  opacity: 0.3;
 }
 
 .cursor {
@@ -745,7 +757,7 @@ left: -72px;
 
 .about-hotel .btn {
   text-decoration: none;
-  padding: 4px 17px;
+  padding: 4px 16px;
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 2px;
