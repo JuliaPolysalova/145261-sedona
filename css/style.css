@@ -1,180 +1,1085 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"  rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a class="active">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+html {
+  background-color: #f2f2f2;
+}
 
-    <main>
+body {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
 
-      <section class="find">
-        <form class="filter">
-          <div class="choose">
-            <h2 class="h2-choose">Инфраструктура:</h2>
-            <div>
-              <input type="checkbox" id="pool" checked>
-              <label for="pool">БАССЕЙН</label>
-            </div>
-            <div>
-              <input type="checkbox" id="parking">
-              <label for="parking">ПАРКОВКА</label>
-            </div>
-            <div>
-              <input type="checkbox" id="wifi">
-              <label for="wifi">Wi-fi</label>
-            </div>
-          </div>
+  color: #000000;
+  background-color: #ffffff;
 
-          <div class="choose choose2">
-            <h2 class="h2-choose">Тип жилья:</h2>
-            <div>
-              <input type="checkbox" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-            </div>
-            <div>
-              <input type="checkbox" id="motel" checked>
-              <label for="motel">МОТЕЛЬ</label>
-           </div>
-           <div>
-              <input type="checkbox" id="flat" checked>
-              <label for="flat">АПАРТАМЕНТЫ</label>
-            </div>
-          </div>
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0 5px 15px 0 #f2f2f2;
+}
 
-          <div class="filter-range">
-            <h2 class="h2-choose">Стоимость в сутки(р):</h2>
 
-            <div class="price-control">
-              <label class="min-price">
-              от <input type="text" name="min-price" value="0">
-              </label>
-              <label class="max-price">
-              до <input type="text" name="max-price" value="3000">
-              </label>
-            </div>
+h1 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 26px;
+}
 
-            <div class="range-control">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
+.h2-found {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
 
-            <button class="btn-transparent" type="submit">Показать</button>
-          </div>
-        </form>
-      </section>
+.h2-reasons {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  line-height: 21px;
+}
 
-      <div class="container">
-        <section class="result">
-          <div class="sort">
-            <h2 class="hotels-found">Найдено:3</h2>
-            <div class="sort-options">
-              <span>Сортировка:</span>
-              <a href="#" class="sort-active">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По рейтингу</a>
-            </div>
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+}
 
-            <button type="button" class="cursor up"></button>
-            <button type="button"  class="cursor down btn-active"></button>
-          </div>
+/*header сетка*/
 
-          <div class="hotel">
-            <img src="img/hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
+.container {
+  width: 1056px;
+  margin: 0 auto;
+  position: relative;
+}
 
-            <div class="about-hotel">
-              <h2 class="h2-found"><a href="#">Amara Resort & Spa</a></h2>
-              <span>Гостиница</span>
-              <span>от 3500 р.</span>
-              <a class="btn button-blue" href="#">Подробнее</a>
-              <a class="btn button-brown" href="#">Забронировать</a>
-            </div>
-            <div class="hotel-rating">
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="rating">Рейтинг 8,5</span>
-            </div>
-          </div>
+.main-nav {
+  font-size: 0;
+}
 
-          <div class="hotel">
-            <img src="img/hotel2.jpg" alt="Desert Quail Inn" width="135" height="90">
-            <div class="about-hotel">
-              <h2 class="h2-found"><a href="#">Desert Quail Inn</a></h2>
-              <span>Мотель</span>
-              <span>от 2500 р.</span>
-              <a class="btn button-blue" href="#">Подробнее</a>
-              <a class="btn button-brown" href="#">Забронировать</a>
-            </div>
-            <div class="hotel-rating">
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="rating">Рейтинг 8,9</span>
-            </div>
-          </div>
+ul {
+  display: inline-block;
+  padding: 14px 0;
+}
 
-          <div class="hotel">
-            <img src="img/hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+.main-nav li {
+  display: inline-block;
+  width: 241px;
+}
 
-            <div class="about-hotel">
-              <h2 class="h2-found"><a href="#">Villas at Poco Diablo</a></h2>
-              <span>Апартаменты</span>
-              <span>от 4000 р.</span>
-              <a class="btn button-blue" href="#">Подробнее</a>
-              <a class="btn button-brown" href="#">Забронировать</a>
-            </div>
-            <div class="hotel-rating">
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="stars"></span>
-              <span class="rating">Рейтинг 9,2</span>
-            </div>
-          </div>
+.main-nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: inherit;
 
-        </section>
-      </div>
-    </main>
+  position:relative;
+}
 
-    <footer class="footer">
-      <div class="container">
-        <div class="visit-sedona">
-          &#035;VISITSEDONA
-        </div>
+.main-nav li:nth-child(2) {
+  margin-right: 90px;
+}
 
-        <section class="footer-social">
-          <a class="tw" href="#"><span>Twitter</span></a>
-          <a class="fb" href="#"><span>Facebook</span></a>
-          <a class="yt" href="#"><span>YouTube</span></a>
-        </section>
+.main-nav li:last-child,
+.main-nav li:nth-child(3) {
+  text-align: right;
+}
 
-        <section class="footer-cop">
-          <span>WEBSITE BY</span>
-          <a href="#"></a>
-        </section>
-      </div>
-    </footer>
+.main-nav a:hover {
+  color: #81b3d2;
+}
 
-  </body>
-</html>
+.main-nav a:active {
+  color: #b2b2b2;
+}
+
+.logo {
+  position: absolute;
+  left: 460px;
+  width: 138px;
+  height: 70px;
+}
+
+
+/*index ceткa*/
+.main-index {
+  margin: 0 auto;
+}
+
+.background {
+	background: url("../img/background.jpg") no-repeat;
+  height: 508px;
+  background-position: top;
+}
+
+.background img {
+  margin-left: 371px;
+  margin-top: 76px;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.reason-title {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 576px;
+  margin: 45px 312px 37px 312px;
+  font-size: 0;
+}
+
+.reason-title p {
+  line-height: 26px;
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.reason1,
+.reason2 {
+  font-size: 0;
+
+}
+
+.reason-about {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  height: 192px;
+  width: 298px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 32px 51px;
+
+  font-size: 14px;
+}
+
+.reason-about h3 {
+  margin-bottom: 25px;
+}
+
+.reason1 p,
+.reason2 p {
+  margin-top: 20px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  margin-left: 127px;
+}
+
+.number::after,
+.number::before {
+  content: "";
+
+  width: 9px;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.number::after {
+  margin-left: 4px;
+}
+
+.number::before {
+  margin-right: 4px;
+}
+
+.reason345 .number::after,
+.reason345 .number::before {
+  background: #000000;
+}
+
+.reason345 .number {
+  margin-left: 112px;
+}
+
+.reason345 h3 {
+  margin-bottom: 24px;
+}
+
+.reason345 p {
+  display: block;
+  margin-top: 21px;
+}
+
+
+.features div {
+  display: inline-block;
+  position: relative;
+
+  text-align: center;
+  width: 303px;
+  margin-right: -4px;
+  padding: 130px 50px 70px 48px; /*переделать*/
+}
+
+.index-motel::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/motel.png") no-repeat;
+  top: 50px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+}
+
+.food::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/food.png") no-repeat;
+  top: 50px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+}
+
+.souvenirs::before {
+  content:"";
+  display: block;
+
+  position: absolute;
+  background: url("../img/souvenirs.png") no-repeat;
+  top: 46px;
+  left: 165px;
+  width: 75px;
+  height: 76px;
+}
+
+.reason345 {
+  padding: 0;
+  background: #eeeeee;
+  margin-top: -10px;
+  padding-bottom: 15px;
+}
+
+.reason3,
+.reason4,
+.reason5 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 270px;
+  margin-right: 60px;
+  padding: 25px 0px 30px 65px;
+}
+
+.reason5 {
+  margin-right: 0;
+  padding-left: 68px;
+}
+
+.interested h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.interested {
+  position: relative;
+
+  display: inline-block;
+  text-align: center;
+  width:440px;
+  padding: 45px 380px 35px 380px;
+}
+
+.interested p {
+  display: block;
+  margin-top: 35px;
+}
+
+.form-position {
+  position: relative;
+}
+
+.form-title {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: inherit;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #766357;
+  border: 0;
+
+  display: block;
+  margin: 0 auto;
+
+  width: 569px;
+  height: 87px;
+  padding-top: 2px;
+}
+
+.form-index {
+  width: 459px;
+  padding: 55px;
+
+  position: absolute;
+  left: 315px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px 0 #cccccc;
+}
+
+.map {
+  width: 1200px;
+  height: 593px;
+  background: url("../img/map.jpg") center no-repeat;
+  background-position: 50%;
+}
+
+.form-row {
+  position: relative;
+}
+
+.date {
+  width: 320px;
+  height: 38px;
+  padding: 0 12px;
+
+  background: #f2f2f2;
+
+  border: 0px;
+  float: right;
+
+  position: relative;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.date:hover {
+  background: #ebebeb;
+}
+
+.date:active {
+  background: #ffffff;
+  border: #e5e5e5 solid 2px;
+  width: 316px;
+  height: 34px;
+}
+
+.calendar {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  font-size: 0;
+  display: inline-block;
+  width: 21px;
+  height: 22px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -10px -70px;
+}
+
+.calendar:hover {
+  background-position: -10px -154px;
+}
+
+.calendar:active {
+  background-position: -10px -112px;
+}
+
+.form-index label {
+  display: inline-block;
+  margin-bottom: 39px;
+  margin-top: 7px;
+
+  font-weight: bold;
+}
+
+.form-row2 {
+  position: relative;
+
+}
+
+.form-number {
+  display: inline-block;
+  text-align: center;
+  width: 114px;
+  height: 34px;
+  margin-left: 16px;
+
+  background: #f2f2f2;
+  border: 0px;
+  margin-bottom: 55px;
+
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+/*
+.minus {
+  position: absolute;;
+
+  background: transparent url("../img/minplus.png") no-repeat;
+  background-position: -10px -10px;
+
+  width: 12px;
+  height: 3px;
+}
+
+.minus:hover {
+  background-position: 4px -38px;
+}
+
+.minus:active {
+  background-position: 4px -15px;
+}
+
+.plus {
+  display: absolute;
+
+  background: #f2f2f2 url("../img/minplus.png") no-repeat;
+  background-position: -10px -79px;
+
+  width: 11px;
+  height: 11px;
+}
+
+.plus:hover {
+  background-position: 0 -127px;
+}
+
+.plus:active {
+  background-position: 0 -96px;
+}
+*/
+
+
+.form-find {
+  width: 100%;
+  background-color: #81b3d2;
+  border: 0;
+  min-height: 58px;
+
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-find:hover {
+  background-color: #669ec0;
+}
+
+.form-find:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+/* .footer:before{
+  content:"";
+  position: absolute;
+  left: 0;
+  top: ;
+  width: 1200px;
+  height: 594px;
+  background-color: pink;
+
+  background: pink url("../img/map.jpg") center no-repeat; */
+
+
+/*hotels ceтка*/
+
+/*filter*/
+
+nav .active {
+  color: #766357;
+}
+
+nav .active:hover {
+  color: #604e43;
+}
+
+nav .active:active {
+  opacity: 0.3;
+}
+
+
+.filter {
+    background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
+    color: #ffffff;
+
+
+    display: flex;
+    flex-direction: row;
+    height: 217px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+.choose {
+  width: 262px;
+  display: inline-block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 25px 0;
+  padding-left: 41px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -196px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -280px;
+}
+
+
+
+.h2-choose {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  margin-top: 26px;
+}
+
+.filter-range {
+  display: inline-block;
+  margin-left: 223px;
+  width: 330px;
+  color: #ffffff;
+}
+
+.filter-range .h2-choose {
+  margin-bottom: 9px;
+}
+
+.price-control {
+  position: relative;
+  margin-left: 7px;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-control::after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%)
+}
+
+.price-control label {
+  display: inline-block;
+
+  font-size:14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-control .min-price,
+.price-control .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-control input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-control {
+  position: relative;
+  margin-left: 7px;
+  margin-bottom: 32px;
+}
+
+.range-control .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+
+  position: absolute;
+  top: -9px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0  rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 31px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+
+/*sort*/
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort {
+  font-size: 0;
+}
+
+.hotels-found {
+  font-size: 21px;
+
+  display: inline-block;
+  width: 165px;
+  margin-top: 31px;
+  vertical-align: top;
+}
+
+.sort-options {
+  font-size: 12px;
+  line-height: 18px;
+
+  display: inline-block;
+  margin-top: 35px;
+  vertical-align: top;
+}
+
+.sort span {
+  margin-right: 36px;
+}
+
+.sort a {
+  color: #cccccc;
+  margin-right: 30px;
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-options .sort-active {
+  color: #81b3d2;
+  border-bottom: 0;
+}
+
+.sort-options a:not(.sort-active):hover {
+  color: #81b3d2;
+}
+
+.sort-options a:not(.sort-active):active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.cursor {
+  display: inline-block;
+  margin-top: 38px;
+  margin-left: 466px;
+  margin-bottom: 36px;
+  width: 10px;
+  height: 11px;
+  border: none;
+}
+
+.up {
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -604px;
+  cursor: pointer;
+}
+
+.up:hover {
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -466px;
+}
+
+.up:active {
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -40px;
+}
+
+.down {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -406px;
+  cursor: pointer;
+}
+
+.down:hover {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -436px;
+}
+
+.down:active {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -10px;
+}
+
+
+.btn-active {
+  margin-left: 14px;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -10px;
+}
+
+
+/*content*/
+.hotel {
+  font-size: 0;
+}
+
+.hotel::before {
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+  left: -72px;
+}
+
+.hotel:last-child::after {
+position: absolute;
+content: "";
+width: 1200px;
+height: 1px;
+background-color: #e5e5e5;
+bottom: 0;
+left: -72px;
+}
+
+.hotel img {
+  margin-right: 31px;
+  margin-top: 30px;
+}
+
+.about-hotel {
+  font-size: 14px;
+
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  min-height: 151px;
+}
+
+.about-hotel span {
+  display: inline-block;
+  width: 113px;
+  margin-bottom: 18px;
+}
+
+.about-hotel .btn {
+  text-decoration: none;
+  padding: 4px 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.h2-found a {
+  margin-top: 10px;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.h2-found a:hover {
+  color: #81b3d2;
+}
+
+.h2-found a:active {
+  opacity: 0.3;
+}
+
+.about-hotel .button-blue {
+  background-color: #81b3d2;
+  margin-right: 3px;
+}
+
+.about-hotel .button-blue:hover {
+  background-color: #669ec0;
+}
+
+.about-hotel .button-blue:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.about-hotel .button-brown {
+  background-color: #766357;
+}
+
+.about-hotel .button-brown:hover {
+  background-color: #604e43;
+}
+
+.about-hotel .button-brown:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+
+.hotel-rating {
+  display: inline-block;
+  font-size: 14px;
+  color: #666666;
+  width: 112px;
+
+  float: right;
+}
+
+.hotel-rating .rating {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 3px 16px;
+}
+
+.stars {
+  float: right;
+  display: inline-block;
+  background: url("../img/spritesheet.png") no-repeat;
+  width: 18px;
+  height: 17px;
+  background-position: -5px -572px;
+  margin-top: 30px;
+  margin-bottom: 48px;
+  margin-left: 5px;
+}
+
+/*footer*/
+.footer-position {
+  margin-top: -122px;
+}
+
+.footer .container {
+  display: flex;
+
+  height: 122px;
+  width: 1200px;
+  background: #ffffff;
+  opacity: 0.9;
+}
+
+.visit-sedona {
+  width: 305px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: inherit;
+  margin: 48px 111px;
+  padding-left: 20px;
+}
+
+.footer-social {
+  width: 400px;
+  font-size: 0px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 26px;
+  height: 28px;
+  margin-top: 37px;
+  margin-right: 6px;
+  background: #81b3d2 url("../img/spritesheet.png") no-repeat;
+  border: 10px solid #81b3d2;
+}
+
+.footer-social .fb {
+  background-position: 4px -487px;
+}
+
+.footer-social .fb:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: 4px -487px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .fb:active {
+  background: #5496bd url("../img/spritesheet.png") no-repeat;
+  background-position: 4px -487px;
+  border: 10px solid #5496bd;
+}
+
+.footer-social .tw {
+  background-position: 1px -515px;
+}
+
+.footer-social .tw:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: 1px -515px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .tw:active {
+  background: #5496bd url("../img/spritesheet.png") no-repeat; /*прозрачность у иконок*/
+  background-position: 1px -515px;
+  border: 10px solid #5496bd;
+}
+
+.footer-social .yt {
+  background-position: -2px -540px;
+  margin-right: 126px;
+}
+
+.footer-social .yt:hover {
+  background: #669ec0 url("../img/spritesheet.png") no-repeat;
+  background-position: -2px -540px;
+  border: 10px solid #669ec0;
+}
+
+.footer-social .yt:active {
+  background: #5496bd url("../img/icon.png") no-repeat;
+  border: 10px solid #5496bd;
+  opacity: 0.3;
+}
+
+.footer-cop {
+  width: 328px;
+}
+
+.footer-cop span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 48px;
+  margin-left: 6px;
+  margin-right: 6px;
+  line-height: 26px;
+}
+
+.footer-cop a {
+  display: inline-block;
+
+  margin-top: 43px;
+  width: 113px;
+  height: 39px;
+  background: #ffffff url("../img/logo_html.png") no-repeat;
+}
+
+.footer-cop a:hover {
+width: 113px;
+height: 39px;
+background: #ffffff url("../img/logo_html_hvr.png") no-repeat;
+border: none;
+}
+
+.footer-cop a:active {
+  background: #ffffff url("../img/logo_html.png") no-repeat;
+  opacity: 0.3;
+}
