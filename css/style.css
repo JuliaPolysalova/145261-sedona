@@ -260,6 +260,7 @@ ul {
   padding: 0;
   background: #eeeeee;
   margin-top: -10px;
+  padding-bottom: 15px;
 }
 
 .reason3,
@@ -283,6 +284,7 @@ ul {
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 24px;
+  margin-top: 10px;
 }
 
 .interested {
