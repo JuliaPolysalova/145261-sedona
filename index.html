@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
+          <a><img src="img/logo.png" alt="City of Sedona" width="138" height="70"></a>
         </div>
         <nav class="main-nav">
           <ul>
@@ -99,24 +99,34 @@
           <button class="form-title">Поиск гостиницы в седоне</button>
           <div class="map">
           <form class="form-index">
+
+            <div class="form-row">
               <label for="arrival-date">Дата заезда:</label>
               <input type="text" id="arrival-date" class="date" placeholder="24 апреля 2016">
               <span class="calendar"></span>
+            </div>
 
+            <div class="form-row">
               <label for="departure-date">Дата выезда:</label>
               <input type="text" id="departure-date" class="date" placeholder="4 июля 2016">
               <span class="calendar"></span>
+            </div>
 
+            <div class="form-row2">
               <label for="adults">Взрослые:</label>
-              <span class="plus"></span>
-              <input type="text" id="adults" class="form-number" value="2">
               <span class="minus"></span>
+              <input type="text" id="adults" class="form-number" value="2">
+              <span class="plus"></span>
+            </div>
 
+            <div class="form-row2">
               <label for="child">Дети:</label>
-              <span class="plus plus1"></span>
-              <input type="text" id="child" class="form-number child" value="0">
               <span class="minus minus1"></span>
+              <input type="text" id="child" class="form-number child" value="0">
+              <span class="plus plus1"></span>
               <button type="submit" class="form-find">Найти</button>
+            </div>
+
           </form>
         </div>
       </section>
