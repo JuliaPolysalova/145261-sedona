@@ -410,15 +410,16 @@ ul {
 
 .form-row2 {
   position: relative;
-
+  display: inline-block;
 }
 
 .form-number {
-  display: inline-block;
+
   text-align: center;
-  width: 114px;
-  height: 34px;
-  margin-left: 16px;
+  width: 38px;
+  height: 36px;
+  margin-left: 75px;
+  margin-right: 87px;
 
   background: #f2f2f2;
   border: 0px;
@@ -429,15 +430,25 @@ ul {
   line-height: 26px;
   color: #000000;
 }
-/*
+
+.child {
+  margin-right: 0;
+  margin-left: 60px;
+}
+
 .minus {
-  position: absolute;;
+  position: absolute;
+  left: 112px;
 
-  background: transparent url("../img/minplus.png") no-repeat;
-  background-position: -10px -10px;
+  background: #f2f2f2 url("../img/minplus.png") no-repeat;
+  background-position: 4px 8px;
 
-  width: 12px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
+}
+
+.minus1 {
+  left: 64px;
 }
 
 .minus:hover {
@@ -449,26 +460,30 @@ ul {
 }
 
 .plus {
-  display: absolute;
+  position: absolute;
+  right: 49px;
 
   background: #f2f2f2 url("../img/minplus.png") no-repeat;
-  background-position: -10px -79px;
+  background-position: 2px -65px;
 
-  width: 11px;
-  height: 11px;
+  width: 38px;
+  height: 38px;
+}
+
+.plus1 {
+  right: -38px;
 }
 
 .plus:hover {
-  background-position: 0 -127px;
+  background-position: 2px -127px;
 }
 
 .plus:active {
-  background-position: 0 -96px;
+  background-position: 2px -96px;
 }
-*/
-
 
 .form-find {
+  display: block;
   width: 100%;
   background-color: #81b3d2;
   border: 0;
@@ -492,18 +507,6 @@ ul {
   color: #88b6d1;
 }
 
-/* .footer:before{
-  content:"";
-  position: absolute;
-  left: 0;
-  top: ;
-  width: 1200px;
-  height: 594px;
-  background-color: pink;
-
-  background: pink url("../img/map.jpg") center no-repeat; */
-
-
 /*hotels ceтка*/
 
 /*filter*/
@@ -522,16 +525,16 @@ nav .active:active {
 
 
 .filter {
-    background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
-    color: #ffffff;
+  background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
+  color: #ffffff;
 
 
-    display: flex;
-    flex-direction: row;
-    height: 217px;
-    padding-left: 72px;
-    padding-right: 72px;
-  }
+  display: flex;
+  flex-direction: row;
+  height: 217px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
 
 .choose {
   width: 262px;
@@ -576,6 +579,18 @@ input[type="checkbox"]:checked + label::before {
   background-position: -10px -280px;
 }
 
+input[type="checkbox"]:disabled + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -322px;
+}
 
 
 .h2-choose {
@@ -814,7 +829,8 @@ input[type="checkbox"]:checked + label::before {
   cursor: pointer;
 }
 
-.down:hover {
+/*
+  .down:hover {
   margin-left: 14px;
   background: url("../img/spritesheet.png") no-repeat;
   width: 11px;
@@ -828,7 +844,7 @@ input[type="checkbox"]:checked + label::before {
   width: 11px;
   height: 10px;
   background-position: -10px -10px;
-}
+}*/
 
 
 .btn-active {
@@ -855,13 +871,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .hotel:last-child::after {
-position: absolute;
-content: "";
-width: 1200px;
-height: 1px;
-background-color: #e5e5e5;
-bottom: 0;
-left: -72px;
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: -72px;
 }
 
 .hotel img {
@@ -904,6 +920,7 @@ left: -72px;
 }
 
 .h2-found a:active {
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -1012,8 +1029,8 @@ left: -72px;
 }
 
 .footer-social .fb:active {
-  background: #5496bd url("../img/spritesheet.png") no-repeat;
-  background-position: 4px -487px;
+  background: #5496bd url("../img/f-sh.png") no-repeat;
+  background-position: 9px;
   border: 10px solid #5496bd;
 }
 
@@ -1028,8 +1045,8 @@ left: -72px;
 }
 
 .footer-social .tw:active {
-  background: #5496bd url("../img/spritesheet.png") no-repeat; /*прозрачность у иконок*/
-  background-position: 1px -515px;
+  background: #5496bd url("../img/tw-sh.png") no-repeat;
+  background-position: 7px;
   border: 10px solid #5496bd;
 }
 
@@ -1045,9 +1062,9 @@ left: -72px;
 }
 
 .footer-social .yt:active {
-  background: #5496bd url("../img/icon.png") no-repeat;
+  background: #5496bd url("../img/yt-sh.png") no-repeat;
+  background-position: 3px;
   border: 10px solid #5496bd;
-  opacity: 0.3;
 }
 
 .footer-cop {
@@ -1073,13 +1090,15 @@ left: -72px;
 }
 
 .footer-cop a:hover {
-width: 113px;
-height: 39px;
-background: #ffffff url("../img/logo_html_hvr.png") no-repeat;
-border: none;
+  background: #ffffff url("../img/logo_html_hvr.png") no-repeat;
 }
 
 .footer-cop a:active {
   background: #ffffff url("../img/logo_html.png") no-repeat;
   opacity: 0.3;
+}
+
+/*for script*/
+.form-close {
+  display: none;
 }
