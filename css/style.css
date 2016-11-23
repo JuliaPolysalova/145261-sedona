@@ -62,7 +62,7 @@ h3 {
 
 .main-nav {
   font-size: 0;
-  min-height: 51px;
+  min-height: 56px;
 }
 
 ul {
@@ -1119,4 +1119,24 @@ input[type="checkbox"]:disabled + label::before {
 /*for script*/
 .form-close {
   display: none;
+}
+
+input::-webkit-input-placeholder{
+opacity: 1;
+}
+
+input::-moz-placeholder{
+opacity: 1;
+}
+
+input::-ms-input-placeholder{
+opacity: 1;
+}
+
+input:-ms-input-placeholder {
+opacity: 1;
+}
+
+input::placeholder {
+opacity: 1;
 }
