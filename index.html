@@ -124,16 +124,14 @@
               <span class="minus minus1"></span>
               <input type="text" id="child" class="form-number child" value="0">
               <span class="plus plus1"></span>
-              <button type="submit" class="form-find">Найти</button>
             </div>
+
+            <button type="submit" class="form-find">Найти</button>
 
           </form>
         </div>
       </section>
-
     </main>
-
-
 
     <footer class="footer footer-position">
       <div class="container">
@@ -153,6 +151,21 @@
         </section>
       </div>
     </footer>
+    <script>
+      var link = document.querySelector(".form-title");
+      var popup = document.querySelector(".form-index");
+      var close = document.querySelector(".form-title"); <--!снова жмем ту же кнопку???-->
 
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add(".form-close");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove(".form-close");
+      });
+
+    </script>
   </body>
 </html>
