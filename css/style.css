@@ -18,7 +18,6 @@ body {
   box-shadow: 0 5px 15px 0 #f2f2f2;
 }
 
-
 h1 {
   font-size: 21px;
   font-weight: bold;
@@ -110,7 +109,6 @@ ul {
   height: 70px;
 }
 
-
 /*index ceткa*/
 .main-index {
   margin: 0 auto;
@@ -151,7 +149,6 @@ ul {
 .reason1,
 .reason2 {
   font-size: 0;
-
 }
 
 .reason-about {
@@ -218,7 +215,6 @@ ul {
   display: block;
   margin-top: 21px;
 }
-
 
 .features div {
   display: inline-block;
@@ -532,7 +528,6 @@ nav .active:active {
   opacity: 0.3;
 }
 
-
 .filter {
   background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
   color: #ffffff;
@@ -608,7 +603,6 @@ input[type="checkbox"]:disabled + label::before {
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -10px -322px;
 }
-
 
 .h2-choose {
   font-family: inherit;
@@ -752,7 +746,6 @@ input[type="checkbox"]:disabled + label::before {
   background: #ffffff;
 }
 
-
 /*sort*/
 .result {
   display: flex;
@@ -847,7 +840,7 @@ input[type="checkbox"]:disabled + label::before {
   cursor: pointer;
 }
 
-/*
+/*для активного курсора вниз
   .down:hover {
   margin-left: 14px;
   background: url("../img/spritesheet.png") no-repeat;
@@ -864,7 +857,6 @@ input[type="checkbox"]:disabled + label::before {
   background-position: -10px -10px;
 }*/
 
-
 .btn-active {
   margin-left: 14px;
   background: url("../img/spritesheet.png") no-repeat;
@@ -872,7 +864,6 @@ input[type="checkbox"]:disabled + label::before {
   height: 10px;
   background-position: -10px -10px;
 }
-
 
 /*content*/
 .hotel {
@@ -968,7 +959,6 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #503e33;
   color: #857871;
 }
-
 
 .hotel-rating {
   display: inline-block;
@@ -1139,4 +1129,9 @@ opacity: 1;
 
 input::placeholder {
 opacity: 1;
+}
+
+input::-webkit-input-placeholder{
+opacity: 1;
+color: #000;
 }
