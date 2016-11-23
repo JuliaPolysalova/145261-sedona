@@ -9,7 +9,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #333;
   background-color: #ffffff;
 
   width: 1200px;
@@ -24,6 +24,7 @@ h1 {
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
+  color: #000000;
 }
 
 .h2-found {
@@ -32,6 +33,7 @@ h1 {
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   margin-bottom: 5px;
+  color: #000000;
 }
 
 .h2-reasons {
@@ -39,6 +41,7 @@ h1 {
   font-weight: bold;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   line-height: 21px;
+  color: #000000;
 }
 
 h3 {
@@ -46,6 +49,7 @@ h3 {
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
+  color: #000000;
 }
 
 /*header сетка*/
@@ -58,6 +62,7 @@ h3 {
 
 .main-nav {
   font-size: 0;
+  main-height: 51px;
 }
 
 ul {
@@ -197,7 +202,7 @@ ul {
 
 .reason345 .number::after,
 .reason345 .number::before {
-  background: #000000;
+  background: #333;
 }
 
 .reason345 .number {
@@ -287,6 +292,7 @@ ul {
   font-size: 30px;
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
   line-height: 24px;
   margin-top: 10px;
 }
@@ -438,7 +444,7 @@ ul {
 
 .minus {
   position: absolute;
-  left: 112px;
+  left: 113px;
 
   background: #f2f2f2 url("../img/minplus.png") no-repeat;
   background-position: 4px 8px;
@@ -449,6 +455,7 @@ ul {
 
 .minus1 {
   left: 64px;
+  top: 0;
 }
 
 .minus:hover {
@@ -462,6 +469,7 @@ ul {
 .plus {
   position: absolute;
   right: 49px;
+  top: 0;
 
   background: #f2f2f2 url("../img/minplus.png") no-repeat;
   background-position: 2px -65px;
@@ -566,6 +574,10 @@ input[type="checkbox"] + label::before {
   background-position: -10px -196px;
 }
 
+input[type="checkbox"]:checked + label:hover::before {
+  background-position: -10px -364px;
+}
+
 input[type="checkbox"]:checked + label::before {
   content: "";
   display: block;
@@ -576,6 +588,10 @@ input[type="checkbox"]:checked + label::before {
   width: 26px;
   height: 26px;
   background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -280px;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
   background-position: -10px -280px;
 }
 
@@ -604,7 +620,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .filter-range {
   display: inline-block;
-  margin-left: 223px;
+  margin-left: 220px;
   width: 330px;
   color: #ffffff;
 }
@@ -615,7 +631,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .price-control {
   position: relative;
-  margin-left: 7px;
+  margin-left: 6px;
 
   height: 36px;
   margin-bottom: 20px;
@@ -657,6 +673,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .price-control input {
   width: 50px;
+  min-height: 38px;
   margin: 0;
 
   color: inherit;
@@ -791,7 +808,7 @@ input[type="checkbox"]:disabled + label::before {
 .cursor {
   display: inline-block;
   margin-top: 38px;
-  margin-left: 466px;
+  margin-left: 461px;
   margin-bottom: 36px;
   width: 10px;
   height: 11px;
