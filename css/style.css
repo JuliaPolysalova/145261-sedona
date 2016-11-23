@@ -18,6 +18,7 @@ body {
   box-shadow: 0 5px 15px 0 #f2f2f2;
 }
 
+
 h1 {
   font-size: 21px;
   font-weight: bold;
@@ -109,6 +110,7 @@ ul {
   height: 70px;
 }
 
+
 /*index ceткa*/
 .main-index {
   margin: 0 auto;
@@ -149,6 +151,7 @@ ul {
 .reason1,
 .reason2 {
   font-size: 0;
+
 }
 
 .reason-about {
@@ -215,6 +218,7 @@ ul {
   display: block;
   margin-top: 21px;
 }
+
 
 .features div {
   display: inline-block;
@@ -353,13 +357,12 @@ ul {
 }
 
 .date {
-  width: 320px;
-  height: 38px;
+  width: 316px;
+  height: 34px;
   padding: 0 12px;
-
+  border: #f2f2f2 solid 2px;
   background: #f2f2f2;
 
-  border: 0px;
   float: right;
 
   position: relative;
@@ -374,9 +377,11 @@ ul {
 
 .date:hover {
   background: #ebebeb;
+  border: #ebebeb solid 2px;
 }
 
-.date:active {
+.date:active,
+.date:focus {
   background: #ffffff;
   border: #e5e5e5 solid 2px;
   width: 316px;
@@ -528,6 +533,7 @@ nav .active:active {
   opacity: 0.3;
 }
 
+
 .filter {
   background: #2a3c48 url("../img/background_hotel.jpg") center no-repeat;
   color: #ffffff;
@@ -603,6 +609,7 @@ input[type="checkbox"]:disabled + label::before {
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -10px -322px;
 }
+
 
 .h2-choose {
   font-family: inherit;
@@ -746,6 +753,7 @@ input[type="checkbox"]:disabled + label::before {
   background: #ffffff;
 }
 
+
 /*sort*/
 .result {
   display: flex;
@@ -840,7 +848,7 @@ input[type="checkbox"]:disabled + label::before {
   cursor: pointer;
 }
 
-/*для активного курсора вниз
+/*
   .down:hover {
   margin-left: 14px;
   background: url("../img/spritesheet.png") no-repeat;
@@ -857,6 +865,7 @@ input[type="checkbox"]:disabled + label::before {
   background-position: -10px -10px;
 }*/
 
+
 .btn-active {
   margin-left: 14px;
   background: url("../img/spritesheet.png") no-repeat;
@@ -864,6 +873,7 @@ input[type="checkbox"]:disabled + label::before {
   height: 10px;
   background-position: -10px -10px;
 }
+
 
 /*content*/
 .hotel {
@@ -959,6 +969,7 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #503e33;
   color: #857871;
 }
+
 
 .hotel-rating {
   display: inline-block;
@@ -1112,26 +1123,22 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 input::-webkit-input-placeholder{
-opacity: 1;
+  opacity: 1;
+  color: #000;
 }
 
 input::-moz-placeholder{
-opacity: 1;
+  opacity: 1;
 }
 
 input::-ms-input-placeholder{
-opacity: 1;
+  opacity: 1;
 }
 
 input:-ms-input-placeholder {
-opacity: 1;
+  opacity: 1;
 }
 
 input::placeholder {
-opacity: 1;
-}
-
-input::-webkit-input-placeholder{
-opacity: 1;
-color: #000;
+  opacity: 1;
 }
