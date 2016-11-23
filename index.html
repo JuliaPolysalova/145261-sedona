@@ -26,7 +26,7 @@
 
     <main class="main-index">
       <div class="background">
-           <img src="img/welcome.png" alt="Welcome to Sedona" width="458" height="352">
+        <img src="img/welcome.png" alt="Welcome to Sedona" width="458" height="352">
       </div>
 
         <section class="reasons">
@@ -69,23 +69,23 @@
           </div>
 
           <div class="reason345">
-          <div class="reason3">
-            <h3>Небольшая<br>площадь</h3>
-            <span class="number">№3</span>
-            <p>Все достопримечательности<br>находятся очень близко</p>
-          </div>
+            <div class="reason3">
+              <h3>Небольшая<br>площадь</h3>
+              <span class="number">№3</span>
+              <p>Все достопримечательности<br>находятся очень близко</p>
+            </div>
 
-          <div class="reason4">
-            <h3>Красивая<br>дорога</h3>
-            <span class="number">№4</span>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>
-          </div>
+            <div class="reason4">
+              <h3>Красивая<br>дорога</h3>
+              <span class="number">№4</span>
+              <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>
+            </div>
 
-          <div class="reason5">
-            <h3>Мало<br>туристов</h3>
-            <span class="number">№5</span>
-            <p>Большинство едет в гранд каньон и<br>толпится там</p>
-          </div>
+            <div class="reason5">
+              <h3>Мало<br>туристов</h3>
+              <span class="number">№5</span>
+              <p>Большинство едет в гранд каньон и<br>толпится там</p>
+            </div>
           </div>
 
         </section>
@@ -94,7 +94,6 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <div>
         <section class="form-position">
           <button class="form-title">Поиск гостиницы в седоне</button>
           <div class="map">
@@ -131,7 +130,10 @@
           </form>
         </div>
       </section>
+
     </main>
+
+
 
     <footer class="footer footer-position">
       <div class="container">
@@ -154,18 +156,11 @@
     <script>
       var link = document.querySelector(".form-title");
       var popup = document.querySelector(".form-index");
-      var close = document.querySelector(".form-title"); <!--снова жмем ту же кнопку???-->
 
       link.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.add(".form-close");
+        popup.classList.toggle("form-close");
       });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove(".form-close");
-      });
-
     </script>
   </body>
 </html>
