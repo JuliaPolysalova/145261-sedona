@@ -159,10 +159,10 @@ ul {
   text-align: center;
   vertical-align: top;
   height: 192px;
-  width: 298px;
+  width: 318px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 32px 51px;
+  padding: 32px 41px;
 
   font-size: 14px;
 }
@@ -180,7 +180,7 @@ ul {
 .number {
   display: flex;
   align-items: center;
-  margin-left: 127px;
+  margin-left: 135px;
 }
 
 .number::after,
@@ -622,20 +622,20 @@ input[type="checkbox"]:disabled + label::before {
 
 .filter-range {
   display: inline-block;
-  margin-left: 220px;
+  margin-left: 225px;
   width: 330px;
   color: #ffffff;
 }
 
 .filter-range .h2-choose {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .price-control {
   position: relative;
   margin-left: 6px;
 
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
 
   font-size: 0px;
@@ -662,7 +662,7 @@ input[type="checkbox"]:disabled + label::before {
 
   font-size:14px;
   line-height: 38px;
-  vertical-align: top;
+  vertical-align: middle;
 
   cursor: pointer;
 }
@@ -670,7 +670,8 @@ input[type="checkbox"]:disabled + label::before {
 .price-control .min-price,
 .price-control .max-price {
   width: 90px;
-  padding-left: 65px;
+  margin-left: 64px;
+  margin-bottom: 5px;
 }
 
 .price-control input {
@@ -734,7 +735,7 @@ input[type="checkbox"]:disabled + label::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 31px;
+  padding: 6px 30px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1123,22 +1124,22 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 input::-webkit-input-placeholder{
-  opacity: 1;
-  color: #000;
+opacity: 1;
+color: #000;
 }
 
 input::-moz-placeholder{
-  opacity: 1;
+opacity: 1;
 }
 
 input::-ms-input-placeholder{
-  opacity: 1;
+opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  opacity: 1;
+opacity: 1;
 }
 
 input::placeholder {
-  opacity: 1;
+opacity: 1;
 }
