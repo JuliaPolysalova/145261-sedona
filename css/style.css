@@ -663,7 +663,7 @@ input[type="checkbox"]:disabled + label::before {
   font-size:14px;
   line-height: 38px;
   vertical-align: middle;
-
+  margin-top: -3px;
   cursor: pointer;
 }
 
@@ -672,6 +672,10 @@ input[type="checkbox"]:disabled + label::before {
   width: 90px;
   margin-left: 64px;
   margin-bottom: 5px;
+}
+
+.price-control .max-price {
+  margin-left: 55px;
 }
 
 .price-control input {
