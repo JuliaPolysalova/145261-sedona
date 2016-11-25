@@ -1,0 +1,1 @@
+var link=document.querySelector(".form-title"),popup=document.querySelector(".form-index");window.onload=function(){popup.classList.add("form-close")},link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("form-close")});
