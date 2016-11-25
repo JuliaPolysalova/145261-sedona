@@ -351,14 +351,14 @@ ul {
   box-shadow: 0 5px 15px 0 #cccccc;
   animation: bounce 0.8s;
 }
-/*
-.map {
-  width: 1200px;
-  height: 593px;
-  background: url("../img/map.jpg") center no-repeat;
-  background-position: 50%;
+
+iframe {
+width: 1200px;
+height: 593px;
+background: url("../img/map.jpg") center no-repeat;
+background-position: 50%;
 }
-*/
+
 .form-row {
   position: relative;
 }
