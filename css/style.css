@@ -335,6 +335,11 @@ ul {
   padding-top: 2px;
 }
 
+@keyframes bounce {
+  from { transform: translateY(-100px); }
+  to { transform: translateY(0); }
+}
+
 .form-index {
   width: 459px;
   padding: 55px;
@@ -344,6 +349,7 @@ ul {
   top: 86px;
   background: #ffffff;
   box-shadow: 0 5px 15px 0 #cccccc;
+  animation: bounce 0.8s;
 }
 /*
 .map {
@@ -1124,17 +1130,9 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 /*for script*/
-@keyframes bounce {
-  0% { transform: translateY(-300px); }
-  50% { transform: translateY(10px); }
-  100% { transform: translateY(0); }
-}
-
 .form-close {
   display: none;
-  animation: bounce 0.4s;
 }
-
 
 input::-webkit-input-placeholder{
 opacity: 1;
